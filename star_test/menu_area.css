@@ -6,7 +6,7 @@
   background: #000;
   top: 0;
   left: 0;
-  z-index: 99999999;
+  z-index: 30000;
 }
 
 #hum_header img{
@@ -39,7 +39,6 @@
 }
 
 .offcanvas-right {
-  margin-top: 50px;
 }
 
 /* 他のCSSの操作 */
