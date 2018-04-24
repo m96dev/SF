@@ -37,3 +37,9 @@
 #header_cart_icon img{
   margin-right: 10px;
 }
+
+
+/* 他のCSSの操作 */
+#ipnsh-header{
+  margin-top: 50px;
+}
