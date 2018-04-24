@@ -368,10 +368,12 @@
 <!-- ヘッダーテストエリア -->
 
 <link rel="stylesheet" href="menu_area.css">
-
-<script src="./test_item/jquery.min.js"></script>
-<link rel="stylesheet" href="./test_item/hiraku.min.css">
 <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="./test_item/hiraku.min.css">
+<script
+src="http://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
 <script src="./test_item/hiraku.min.js"></script>
 
 <div id="hum_header" ="">
@@ -388,24 +390,13 @@
   </div><br style="clear:both;">
 </div>
 
-<div class="offcanvas-right">
+<div class="offcanvas-right" style="background: #A2DBA8;">
   <ul>
     <li>リスト1</li>
     <!-- 省略 -->
   </ul>
 </div>
 
-<div>
-<p>Lorem ipsum dolor sit amet, consectetuer </p>
-<!-- 省略 メインのコンテンツ部分 -->
-</div>
-
-<script ="">
-$(".offcanvas-right").hiraku({
-  btn:"#offcanvas-btn-right",
-  direction:"left"
-});
-</script>
 
 <!-- ヘッダー　ここまで -->
 
@@ -1111,5 +1102,11 @@ $(".offcanvas-right").hiraku({
 </script>
 
 
+<script ="">
+$(".offcanvas-right").hiraku({
+  btn:"#offcanvas-btn-right",
+  direction:"left"
+});
+</script>
 <!-- <iframe width="0" height="0" id="grp15_ias" style="display: none;" src="./index_files/saved_resource.html"></iframe> -->
 </body></html>
