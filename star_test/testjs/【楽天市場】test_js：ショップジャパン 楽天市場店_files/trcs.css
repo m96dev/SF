@@ -1,0 +1,464 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@import url(http://www.rakuten.ne.jp/gold/shopjapan/css/font/notosansjapanese.css);
+
+
+/*****************************************************************************************************************/
+/*共通*/
+/*****************************************************************************************************************/
+
+img{ vertical-align:bottom;}
+
+.trcs_asu_pc{display:none;}/*あす楽バナーPC*/
+.trcs_asu_sp{display:none;}/*あす楽バナーSP*/
+.trsp_asu_kome{display:none;}/*あす楽バナー注釈*/
+
+.trsp_set_style{
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	width:940px;
+	font-size:16px;
+	line-height:16px;
+	font-weight:bold;
+	text-align:left;
+	margin:10px auto 10px;
+}
+
+.itemCartLinks:before{
+	margin:0;
+	content:" ";
+	display:block;
+	height: 0;
+	padding-top:0 !important;
+	background: url(https://www.rakuten.ne.jp/gold/shopjapan/sp/images/other/sp_footinfo3.png) no-repeat top left;
+	background-size: contain;
+}/*SPページのカート上の画像(お問い合わせボタン上)*/
+
+.trcs_reviewlink_sp{
+	display: block;
+	width:96%;
+	background:#D1D8EA;
+	padding:10px 2%;
+	text-align:center;
+	margin-bottom:4%;
+	font-size:12px;
+}
+
+/*.sj_sppointup_all { display: none; }*/
+
+
+
+
+
+/*****************************************************************************************************************/
+/*LP*/
+/*****************************************************************************************************************/
+
+
+.trsc_splp01{
+	display:block;
+	height:0;
+	padding-top:96.25%;
+	background:url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/splp_0424_01.jpg) no-repeat top left;
+	background-size:contain;
+	margin:0px 0;
+}
+
+.trsc_splp02{
+	display:block;
+	height:0;
+	padding-top:187.5%;
+	background:url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/splp_0424_02.jpg) no-repeat top left;
+	background-size:contain;
+	margin:0px 0;
+}
+
+.trsc_splp03{
+	display:block;
+	height:0;
+	padding-top:129.84%;
+	background:url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/splp_0424_03.jpg) no-repeat top left;
+	background-size:contain;
+	margin:0px 0;
+}
+
+
+.trsc_splp04{
+	display:block;
+	height:0;
+	padding-top:187.5%;
+	background:url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/splp_0424_04.jpg) no-repeat top left;
+	background-size:contain;
+	margin:0px 0;
+}
+
+.trsc_splp05{
+	display:block;
+	height:0;
+	padding-top:151.56%;
+	background:url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/splp_0424_05.jpg) no-repeat top left;
+	background-size:contain;
+	margin:0px 0;
+}
+
+.trsc_splp06{
+	display:block;
+	height:0;
+	padding-top:161.256%;
+	background:url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/splp_0424_06.jpg) no-repeat top left;
+	background-size:contain;
+	margin:0px 0;
+}
+
+.trsc_splp07{
+	display:block;
+	height:0;
+	padding-top:100.62%;
+	background:url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/splp_0424_07.jpg) no-repeat top left;
+	background-size:contain;
+	margin:0px 0;
+}
+
+.trsc_splp08{
+	display:block;
+	height:0;
+	padding-top:107.5%;
+	background:url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/splp_0424_08.jpg) no-repeat top left;
+	background-size:contain;
+	margin:0px 0;
+}
+
+.trsc_splp09{
+	display:block;
+	height:0;
+	padding-top:139.06%;
+	background:url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/splp_0424_09.jpg) no-repeat top left;
+	background-size:contain;
+	margin:0px 0;
+}
+
+
+.trsp_sp_btn{
+	display:block;
+	/*display:none;*/
+	height:0;
+	padding-top:16.87%;
+	background:url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/lp_sp8.jpg) no-repeat top left;
+	background-size:contain;
+	margin:5px 0;
+}
+
+.trsc_2hosyou{
+	display:block;
+	/*display:none;*/
+	height:0;
+	padding-top:59.68%;
+	background:url(https://image.rakuten.co.jp/shopjapan/cabinet/trs/2hosyou_sp.jpg) no-repeat top left;
+	background-size:contain;
+	margin:5px 0;
+}
+
+.trcs_sppage_btn{
+    width:100%;
+    display: block;
+    overflow:hidden;
+    position:relative;
+    margin-bottom:2%;
+    font-size:12px;
+    font-weight:bold;
+    line-height:14px;
+    text-align:center;
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', 'sans-serif';
+}
+
+.trcs_sppage_btn a{
+    display:block;
+    margin-left:2.5%;;
+    float:left;
+    width:31.5%;
+    color:#fff;
+    background:#CF0003;
+    border-radius:3px;
+    text-decoration:none;
+    padding:3.5% 0;
+}
+
+.trcs_sppage_btn a:first-child{
+    margin-left:0;
+}
+
+
+
+
+
+/*****************************************************************************************************************/
+/*CP*/
+/*****************************************************************************************************************/
+
+.trcs_hb_pc{
+	width:950px;
+	height:415px;
+    background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/pchp_0417.jpg) no-repeat top left;
+	/*background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/hero2_pc0919.jpg) no-repeat top left;*/
+	margin:0 auto;
+}
+
+.trcs_hb_sp{
+	display:block;
+	/*display:none;*/
+	height:0;
+	padding-top:62.5%;
+    background:url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/sphp_0417.jpg) no-repeat top left;
+	background-size:contain;
+	margin:0px 0;
+}
+
+.trcs_cp1_pc{
+	width:950px;
+	height:430px;
+	background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/pccp_0427.jpg) no-repeat top left;
+	margin:0 auto;
+	/*display:none;*/
+}
+
+.trcs_cp1_sp{
+	display:block;
+	height:0;
+	padding-top:107.81%;
+	background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/spcp_0427.jpg) no-repeat top left;
+	background-size:contain;
+	margin:5px 0;
+}
+
+.trcs_cp2_pc{
+	width:950px;
+	height:383px;
+	background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/pcsc_han0417.jpg) no-repeat top left;
+	margin:0 auto;
+	/*display:none;*/
+}
+
+.trcs_cp2_sp{
+	display:block;
+	height:0;
+	padding-top:74.68%;
+	background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/spsc01_0417.jpg) no-repeat top left;
+	background-size:contain;
+	margin:5px 0;
+    /*display:none;*/
+}
+
+
+
+
+.trcs_cp3_sp{
+	display:block;
+	height:0;
+	padding-top:134.37%;
+	background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/spsc1_0326v2.jpg) no-repeat top left;
+	background-size:contain;
+	margin:5px 0;
+    display:none;
+}
+
+
+
+
+/*****************************************************************************************************************/
+/*SCSP画像*/
+/*****************************************************************************************************************/
+
+.trsc_scsp_tan{
+	display:block;
+	height:0;
+    /*padding-top:30.9375%;
+	background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/scsp1127_01a.jpg) no-repeat top left;/*マルチピロー*/
+    /*padding-top:30.9375%;
+	background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/spsc1_0226_01.jpg) no-repeat top left;*//*低反発まくら*/
+    padding-top:30.9375%;
+	background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/spsc_01_0417.jpg) no-repeat top left;/*ネックフィットピロー*/
+	background-size:contain;
+	margin:0% 0 2%;
+}
+
+.trsc_scex_tan{
+	display:block;
+	height:0;
+    /*padding-top:35.3125%;
+	background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/exsp1127_01a.jpg) no-repeat top left;*//*マルチピロー*/
+	padding-top:24.84%;
+	background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/spcp01_01_0417.jpg) no-repeat top left;/*低反発まくら*/
+    /*padding-top:35.3125%;
+	background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/exsp1002_01_2.jpg) no-repeat top left;*//*ネックフィットピロー*/
+	background-size:contain;
+	margin:0% 0 0%;
+}
+
+.trsc_scsp_han{
+	display:block;
+	height:0;
+	padding-top:112.1875%;
+    background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/spsc02_0427.jpg) no-repeat top left;
+	background-size:contain;
+	margin:0% 0 0px;
+    /*display:none;*/
+}
+
+.trsc_scex_han{
+	display:block;
+	height:0;
+	padding-top:15.62%;
+	background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/spcp02_01_0417.jpg) no-repeat top left;/*低反発まくら*/
+    /*padding-top:9.37%;
+	background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/spsc2_1208_04.jpg) no-repeat top left;*//*マルチピロー*/
+	background-size:contain;
+	margin:0 0 0%;
+    /*display:none;*/
+}
+
+
+
+
+
+
+/*****************************************************************************************************************/
+/*SPSCボタン*/
+/*****************************************************************************************************************/
+
+.trsp_set_ttl{display:block;font-size:14px;font-weight:bold;line-height:24px;height:25px;width:100%;text-align:center;padding:5px 0;margin:0 auto 10px;background:#eee;border-bottom:2px solid #cc0000;color:#000;}
+.tan_ttl{background:#333333;border-bottom:5px solid #666666;color:#ffffff;}
+.cover_ttl{background:#283e9b;border-bottom:5px solid #a5b3ee;color:#ffffff;}
+.double_ttl{background:#009600;border-bottom:5px solid #7fe07f;color:#ffffff;}
+.deluxe_ttl{background:#273260;border-bottom:5px solid #4557a2;color:#ffffff;}
+.trspbtn{display:block;height:0;padding-top:15.625%;margin:0 0 0;}
+.trspbtn_wc{display:block;height:0;padding-top:18.593%;margin:0 0 0;}
+
+/*通常単品ボタン*/
+.p_st_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/sp_btn_s.jpg) no-repeat top left;background-size:contain;}/*シングルボタン*/
+.p_mt_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/sp_btn_m.jpg) no-repeat top left;background-size:contain;}/*セミダブルボタン*/
+.p_wt_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/sp_btn_w.jpg) no-repeat top left;background-size:contain;}/*ダブルボタン*/
+.p_qt_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/sp_btn_q.jpg) no-repeat top left;background-size:contain;margin-bottom:5%;}/*クイーンボタン*/
+
+/*通常カバー2枚セットボタン*/
+.p_sc_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/sp_btn_c2_s.jpg) no-repeat top left;background-size:contain;}/*シングル×マットレス＋カバー*/
+.p_mc_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/sp_btn_c2_m.jpg) no-repeat top left;background-size:contain;}/*セミダブル×マットレス＋カバー*/
+.p_wc_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/sp_btn_c2_w.jpg) no-repeat top left;background-size:contain;}/*ダブル×マットレスカバーボタン*/
+.p_qc_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/sp_btn_c2_q.jpg) no-repeat top left;background-size:contain;margin-bottom:5%;}/*クイーン×マットレスカバーボタン*/
+
+/*通常マットレス2枚セットボタン*/
+.p_ss_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/sp_btn_2mai_s.jpg) no-repeat top left;background-size:contain;}/*シングル×シングルボタン*/
+.p_ms_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/sp_btn3_2mai_sm.jpg) no-repeat top left;background-size:contain;}/*セミダブル×シングルボタン*/
+.p_ws_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/sp_btn3_2mai_sw.jpg) no-repeat top left;background-size:contain;}/*ダブル×シングルボタン*/
+.p_qs_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/sp_btn3_2mai_sq.jpg) no-repeat top left;background-size:contain;}/*クイーン×シングルボタン*/
+.p_mm_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/sp_btn_2mai_mm.jpg) no-repeat top left;background-size:contain;}/*セミダブル×セミダブルボタン*/
+.p_ww_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/sp_btn_2mai_ww.jpg) no-repeat top left;background-size:contain;}/*ダブル×ダブルボタン*/
+.p_qq_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/sp_btn_2mai_qq.jpg) no-repeat top left;background-size:contain;margin-bottom:5%;}/*クイーン×クイーンボタン*/
+
+/*半額セットボタン*/
+.han_ss_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/scsp1002_01.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;}/*シングル×シングルボタン*/
+.han_mm_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/scsp1002_02.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;}/*セミダブル×セミダブルボタン*/
+.han_ww_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/scsp1002_03.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;}/*ダブル×ダブルボタン*/
+.han_qq_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/scsp1002_04.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;}/*クイーン×クイーンボタン*/
+.han_sm_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/scsp1002_05.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;}/*シングル×セミダブルボタン*/
+.han_sw_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/scsp1002_06.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;}/*シングル×ダブルボタン*/
+.han_sq_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/scsp1002_07.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;}/*シングル×クイーンボタン*/
+.han_mw_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/scsp1002_08.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;}/*セミダブル×ダブルボタン*/
+.han_mq_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/scsp1002_09.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;}/*セミダブル×クイーンボタン*/
+.han_wq_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/scsp1002_10.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;}/*ダブル×クイーンボタン*/
+
+/*デラックスセットボタン*/
+.del_ss_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/ds_btn4_ss.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;display:none;}/*シングル×シングルボタン*/
+.del_mm_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/ds_btn4_mm.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;display:none;}/*セミダブル×セミダブルボタン*/
+.del_ww_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/ds_btn4_ww.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;display:none;}/*ダブル×ダブルボタン*/
+.del_qq_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/ds_btn4_qq.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;display:none;}/*クイーン×クイーンボタン*/
+.del_sm_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/ds_btn4_sm.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;display:none;}/*シングル×セミダブルボタン*/
+.del_sw_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/ds_btn4_sw.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;display:none;}/*シングル×ダブルボタン*/
+.del_sq_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/ds_btn4_sq.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;display:none;}/*シングル×クイーンボタン*/
+.del_mw_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/ds_btn4_mw.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;display:none;}/*セミダブル×ダブルボタン*/
+.del_mq_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/ds_btn4_mq.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;display:none;}/*セミダブル×クイーンボタン*/
+.del_wq_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/ds_btn4_wq.jpg) no-repeat top left;background-size:contain;padding-top:21.5625%;}/*ダブル×クイーンボタン*/
+
+/*スペシャルセットセットボタン*/
+.spe_s_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/spe_kan2_s.jpg) no-repeat top left;background-size:contain;}/*シングルボタン*/
+.spe_m_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/spe_kan2_m.jpg) no-repeat top left;background-size:contain;}/*セミダブルボタン*/
+.spe_w_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/spe_kan2_w.jpg) no-repeat top left;background-size:contain;}/*ダブルボタン*/
+.spe_q_btn{background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trcs/spe_kan2_q.jpg) no-repeat top left;background-size:contain;margin-bottom:5%;}/*クイーンボタン*/
+
+.other_btn{display:block;margin:3% auto 7%;padding:3%;width:70%;background:#cc0000;border-radius:5px;border:1px solid #cc0000;text-align:center;text-decoration:none;color:#ffffff;font-weight:bold;font-size:0.8rem;}
+
+
+
+
+
+/*****************************************************************************************************************/
+/*TRSCテキスト化*/
+/*****************************************************************************************************************/
+
+.trsp_wrap img{vertical-align:bottom; border:none;}
+
+.trsp_wrap small{color:#666;font-weight:normal;letter-spacing:0px;}
+
+.trsp_wrapper{
+	width:950px;
+	text-align:center;
+	margin: 0 auto;
+	font-family: 'Noto Sans Japanese';
+	color:#333;
+}
+
+.trsp_wrapper .trsp_bg_950{
+	width:950px;
+	position:relative;
+	margin:0 auto;
+	background-repeat:no-repeat;
+	background:top center;
+	text-align:center;
+}
+
+.trsp_wrapper .trsp_bg_950 p{
+	position:absolute;
+	margin:0;
+	font-family: 'Noto Sans Japanese';
+}
+
+.trsp_wrapper .trsp_ttl{
+	font-size:30px;
+	line-height:35px;
+	font-weight:800;
+	text-align:left;
+	color:#283261;
+}
+
+.trsp_wrapper .trsp_txb{
+	font-weight:400;
+	font-size:18px;
+	line-height:27px;
+	text-align:left;
+}
+
+.trsp_wrapper .trsp_txb span{
+	font-weight:600;
+	color:#ff8400;
+}
+
+.trsp_wrapper .trsp_spc{
+	text-align:left;
+	font-size:26px;
+	line-height:30px;
+	font-weight:600;
+	color:#fff;
+}
+
+.trsp_wrapper .trsp_voice{
+	font-weight:200;
+	font-size:18px;
+	line-height:24px;
+	text-align:left;
+	letter-spacing:-1px;
+}
+
+.trsp_wrapper .trsp_voice span{
+	font-weight:500;
+	color:#ff8400;
+}

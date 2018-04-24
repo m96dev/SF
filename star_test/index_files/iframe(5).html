@@ -1,0 +1,83 @@
+
+<!-- saved from url=(0119)https://pixel.mathtag.com/sync/iframe?mt_uuid=78895ad0-73cd-4900-9757-d7562d7a9d0d&no_iframe=1&mt_adid=126262&mt_lim=15 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
+<script type="text/javascript">
+try {
+   /**/
+(function() {
+    try {
+	var sync_4815162342 = function() {
+this.urls = [
+[0, "https://pixel.mathtag.com/misc/img?mop_seq=0:7&mt_cb=845654&mop_top="],
+[31, "https://sync.adaptv.advertising.com/sync?type=gif&key=mediamathinc&uid=78895ad0-73cd-4900-9757-d7562d7a9d0d"],
+[10074, "https://cm.g.doubleclick.net/pixel?google_nid=mediamath_dmp&google_cm"],
+[36, "https://i.liadm.com/s/37464?bidder_id=7156&bidder_uuid=78895ad0-73cd-4900-9757-d7562d7a9d0d"],
+[83, "https://match.sharethrough.com/sync/v1?source_id=sxJxpx7oBnWwaatGE8NyMg2D&source_user_id=78895ad0-73cd-4900-9757-d7562d7a9d0d"],
+[51, "https://eb2.3lift.com/xuid?mid=3690&xuid=78895ad0-73cd-4900-9757-d7562d7a9d0d&dongle=3995"],
+[10040, "https://sync.crwdcntrl.net/map/c=4735/tp=MDMA/tpid=78895ad0-73cd-4900-9757-d7562d7a9d0d"],
+[10004, "https://dpm.demdex.net/ibs:dpid=269&dpuuid=78895ad0-73cd-4900-9757-d7562d7a9d0d"],
+[0, "https://pixel.mathtag.com/misc/img?mop_seq=7:7&mt_cb=965166&check=78895ad0-73cd-4900-9757-d7562d7a9d0d&mop_top=31:1524534370|10074:1524534370|36:1524534370|83:1524534370|51:1524534370|10040:1524534370|10004:1524534370|"]
+]
+	    this.progress = 0;
+	    var self = this;
+	    var tims = "";
+	    var errs = "";
+	    this.sync = function(i)
+	    {
+		var e = document.createElement("img");
+		var now = new Date();
+		if (e.addEventListener)
+		{
+		    e.addEventListener('load', function() {
+			var temp = new Date().getTime() - now.getTime(); tims += self.urls[i][0]+':'+temp+"|";
+		    });
+		    e.addEventListener('error', function() {
+			var temp = new Date().getTime() - now.getTime(); errs += self.urls[i][0]+':'+temp+"|";
+		    });
+		}
+		e.src = self.urls[i][1];
+	    }
+	    this.batch = function()
+	    {
+		for (var i = self.progress; i < self.urls.length; ++i)
+		{
+		    self.sync(i);
+		}
+	    }
+	    this.final = function()
+	    {
+		var e = document.createElement("img");
+		e.src = self.urls[self.urls.length-1][1]+"&final&timings="+tims+"&errors="+errs;
+	    }
+	    this.some = function(howmany)
+	    {
+		var count = 0;
+		for (var i = self.progress; i < self.urls.length && count < howmany; ++i)
+		{
+		    self.sync(i);
+		    self.progress++;
+		    count++;
+		}
+	    }
+	}
+	var s_4815162342 = new sync_4815162342();
+	s_4815162342.some(1);
+	setTimeout(function(){s_4815162342.some(2);}, 1000);
+	setTimeout(s_4815162342.batch, 3000);
+	setTimeout(s_4815162342.final, 10000);
+    }
+    catch(ex)
+    {
+	document.createElement("img").src="//pixel.mathtag.com/error/img?error_domain=syncjs&what="+encodeURIComponent(ex.message);
+    }
+})();
+
+}
+catch(ex)
+{
+   document.createElement("img").src="//pixel.mathtag.com/error/img?error_domain=wrap_iframe&what="+encodeURIComponent(ex.message);
+}
+</script>
+
+
+</body></html>

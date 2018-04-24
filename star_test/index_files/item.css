@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* PC用販売説明文(LP) */
+.sflp-item {
+	width:1000  !important;
+	height:22150  !important;
+	border:none;
+	overflow:hidden;
+	}
+
+.sflp-item999 {
+	width:1000  !important;
+	height:20800  !important;
+	border:none;
+	overflow:hidden;
+	}
+		
+.sflp-teiki {
+	width:1023  !important;
+	height:4800  !important;
+	border:none;
+	overflow:hidden;
+	}
+
+.sf100001 {
+	width:1000  !important;
+	height:6600  !important;
+	border:none;
+	overflow:hidden;
+	}
+
+.sf100002 {
+	width:1000  !important;
+	height:15200  !important;
+	border:none;
+	overflow:hidden;
+	}
+
+/* PC用商品説明文(ｶｺﾞ下) */
+.item {
+	width:500;
+	height:800;
+	border:none;
+	overflow:hidden;
+	}
+	
+/* スマホイベントバナー未使用 */
+/*.sflpsp2 {
+	border:none;
+	overflow:hidden;
+	width:100%;
+	height:100%;
+	}
+	
+#sflpsp2 {
+        width: 0  !important;
+        height: 0  !important;
+        visibility: hidden  !important;
+	}*/
+
+/* PC用商品説明文(ｶｺﾞ下)のスペック表 */
+#spec{
+border-collapse: separate;
+border-spacing: 0px;
+border-top: 1px solid #ccc;
+border-left: 1px solid #ccc;
+font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", serif  !important;
+font-size: 13px;
+color: #555555;
+}
+
+#spec th{
+width:100PX;
+padding:0px;
+text-align: left;
+vertical-align: top;
+color: #444;
+font-weight: normal;
+background-color: #f3f3f3;
+border-left: 1px solid #fff;
+border-top: 1px solid #fff;
+border-right: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+}
+
+#spec td{
+width:350PX;
+padding:2px;
+background-color: #fff;
+border-right: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+}
+
+/* かごまわり(PC)///////////// */
+.item_name {
+	font-family: ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, Osaka, ＭＳ Ｐゴシック, MS PGothic, serif  !important;
+	}
+
+.catch_copy {
+	display:block;
+	margin-bottom:15px;
+	font-family: ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, Osaka, ＭＳ Ｐゴシック, MS PGothic, serif  !important;
+	}
+
+.item_number_title  {
+	font-family: ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, Osaka, ＭＳ Ｐゴシック, MS PGothic, serif  !important;
+	}
+
+.item_number  {
+	font-family: ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, Osaka, ＭＳ Ｐゴシック, MS PGothic, serif  !important;
+	}
+
+.price1  {
+	font-family: ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, Osaka, ＭＳ Ｐゴシック, MS PGothic, serif  !important;
+	}
+
+.price2  {
+	font-family: ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, Osaka, ＭＳ Ｐゴシック, MS PGothic, serif  !important;
+	font-weight: bolder;
+	}
+
+.tax_postage  {
+	font-family: ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, Osaka, ＭＳ Ｐゴシック, MS PGothic, serif  !important;
+	}
+
+td.inventory{
+	word-wrap:break-word;
+	width:550px;
+	height:45px;
+	font-family: ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, Osaka, ＭＳ Ｐゴシック, MS PGothic, serif  !important;
+	}
+
+
+td.inventory font{
+	font-size:11.5px;color:#555555;
+	}
+
+.unit  {
+	font-family: ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, Osaka, ＭＳ Ｐゴシック, MS PGothic, serif  !important;
+	}
+
+select[name="choice"]{
+	font-family: ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, Osaka, ＭＳ Ｐゴシック, MS PGothic, serif  !important;
+ 	height:25px;
+ 	margin:0px 0px 10px 0px;
+
+	}
+ 
+.choice{
+	font-family: ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, Osaka, ＭＳ Ｐゴシック, MS PGothic, serif  !important;
+    display:block;
+    margin:2px 0px 0px 0px;
+    background-image:url("https://image.rakuten.co.jp/starfilter/cabinet/w.jpg");
+    background-repeat:no-repeat;
+    background-position:right center;
+    width:450px;
+    height:16px;
+    padding:10px 0px 0px 0px;
+	}
+
+input[value="買い物かごに入れる"] {
+	font-size:18px; 
+	font-weight:bold;
+	margin:10px 0 10px 0;
+	padding:10px 40px;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", MS PGothic, serif  !important;
+	}
+	
+/* かごまわり(PC定期)///////////// */	
+#rakutenLimitedId_aroundCart * {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", MS PGothic, serif  !important;
+    font-weight: 100;
+	color: #555555;
+    font-size: 13px;
+	}
+
+#rakutenLimitedId_aroundCart table {
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    left: 0;
+    margin: 0;
+	}
+
+/* 定期購入(PC)///////////// */
+
+input[value="定期購入する"]{
+ background: url(https://www.rakuten.ne.jp/gold/starfilter/img/teiki_cart.png) no-repeat !important; 
+     width: 212px !important;
+    height: 34px !important;
+    overflow: hidden !important;
+    border-width: 0px !important;
+    cursor: pointer !important;
+    text-indent: 150% !important;
+    white-space: nowrap !important;
+    margin: 5px 0 !important;
+}
+
+
+#pcfloatfooter  a{
+display: block;
+width: 100%;
+height: 50px;
+line-height: 40px;
+margin: 0;
+padding: 0;
+position: fixed;
+bottom: 0;
+right: 0;
+color: #FFF!important;
+text-align: center;
+font-weight: bold;
+background-color: rgba(190,190,190,1);
+z-index: 2147483647;}

@@ -1,0 +1,333 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+
+
+/*****************************************************************************************************************/
+/*SJ_sale_ポイント10倍*/
+/*****************************************************************************************************************/
+
+.sj_p10_sp{
+	display:block;
+	height:0;
+	padding-top:34.06%;
+    background:url(https://image.rakuten.co.jp/shopjapan/cabinet/share/sjsale/sjp10.jpg) no-repeat top left;
+	background-size:contain;
+	margin:2% 0 3%;
+    display: none;
+}
+
+
+/*****************************************************************************************************************/
+/*TR7P導線*/
+/*****************************************************************************************************************/
+
+.tr7p_dou_pc{
+	width:950px;
+	height:350px;
+    background: url(https://image.rakuten.co.jp/shopjapan/cabinet/tr7p/pc_dou01.jpg) no-repeat top left;
+	margin:0 auto;
+    display: none;
+}
+
+.tr7p_dou_sp{
+	/*display:block;*/
+	height:0;
+	padding-top:42.8125%;
+    background:url(https://image.rakuten.co.jp/shopjapan/cabinet/tr7p/sp_dou01.jpg) no-repeat top left;
+	background-size:contain;
+	margin:2% 0 3%;
+    display: none;
+}
+
+
+
+/*****************************************************************************************************************/
+/*TRHF導線*/
+/*****************************************************************************************************************/
+
+.trhf_dou_pc{
+	/*display:block;*/
+	width:950px;
+	height:283px;
+    background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trhf/pc_dou02.jpg) no-repeat top left;
+	margin:0 auto 20px;
+    display: none;
+}
+
+.trhf_tate_pc{position:fixed;padding:0;margin:0;top:400px;left:0;z-index:999999999;}
+
+.trhf_tate_pc{
+	width:150px;
+	height:347px;
+    background: url(https://www.rakuten.ne.jp/gold/shopjapan/trhf/images/trht_pc.png) no-repeat top left;
+	margin:0 auto 20px;
+    display: none;
+}
+
+.trhf_dou_sp{
+	/*display:block;*/
+	height:0;
+	padding-top:47.1875%;
+    background:url(https://image.rakuten.co.jp/shopjapan/cabinet/trhf/sp_dou02.jpg) no-repeat top left;
+	background-size:contain;
+	margin:2% 0 3%;
+    display: none;
+}
+
+
+
+/*****************************************************************************************************************/
+/*CERO導線*/
+/*****************************************************************************************************************/
+
+.cero_dou_pc{
+	display:block;
+	width:950px;
+	height:259px;
+    background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trce/pc_cero950.jpg) no-repeat top left;
+	margin:0 auto;
+   /* display: none;*/
+}
+
+.cero_dou_sp{
+	display:block;
+	height:0;
+	padding-top:39.06%;
+    background:url(https://image.rakuten.co.jp/shopjapan/cabinet/trce/sp_cero640.jpg) no-repeat top left;
+	background-size:contain;
+	margin:2% 0 3%;
+    /*display: none;*/
+}
+
+
+
+
+/*****************************************************************************************************************/
+/*アウトレットセール用　PC全左縦　SPTOP下追従　SP下層右縦*/
+/*****************************************************************************************************************/
+
+.sj_outletsale{display: none;}
+.off_coupon{display: none;}
+.off_coupon{border-top: 1px solid #fff;}
+.point_17{display: none;}
+.sj_beauty_sale{display: none;}
+.sj_wowsale{display: none;}
+
+
+
+/*****************************************************************************************************************/
+/*さわらないやつ*/
+/*****************************************************************************************************************/
+
+.ks1703_all_pc{margin:0 auto 40px;}/*決算セール2017.3.3 TOP_PC*/
+
+.ks1703_top_pc{width:1050px;margin:0 auto 20px;}/*決算セール2017.3.3 器具_PC*/
+.ks1703_top_pc img{width:1050px;}/*決算セール2017.3.3 器具_PC*/
+
+.ks1703_kigu_pc{margin:-20px auto 20px;}/*決算セール2017.3.3 器具_PC*/
+.ks1703_kigu_pc img{width:850px;}/*決算セール2017.3.3 器具_PC*/
+
+.ks1703_all_sp{width:96%;margin:0 auto;}/*決算セール2017.3.3 TOP_SP*/
+.ks1703_all_sp img{vertical-align:bottom;}
+.kigu_sp:after{display:block;content:'';margin-bottom:4%;clear:both;}
+
+
+
+/*****************************************************************************************************************/
+/*TRSL《TRSPページ導線》*/
+/*****************************************************************************************************************/
+
+.ks1703_trs_pctate{position:fixed;padding:0;margin:0;top:70px;right:0;z-index:10;}/*決算セール2017.3.3 TRS_TATE*/
+
+.ks1703_trs_pctate a{
+	/*display:block;*/
+	width:137px;
+	height:336px;
+	margin:0 auto;
+	background: url(http://www.rakuten.ne.jp/gold/shopjapan/cp/trsl_wow/rank_170525pc2.png) no-repeat top left;
+	display:none;
+}/*決算セール2017.3.3 TRS_PC*/
+
+.ks1703_trs_sptate{
+	/*display:block;*/
+	width:25%;
+	position: fixed;
+	padding-bottom:125px;
+	bottom:0;
+	right:0;
+	z-index:2147480000;
+	display: none;
+}/*決算セール2017.3.3 TRS_SP*/
+
+.ks1703_trs_sptate{
+	width:25%;
+	position:fixed;
+	bottom:125px;
+	right:0;
+	/*display:block;*/
+	height:0;
+	margin:0;
+	padding-bottom:51%;
+	background: url(https://www.rakuten.ne.jp/gold/shopjapan/cp/trsl_wow/rank_170525sp2.png) no-repeat top left;
+	background-size: contain;
+	z-index:2147480000;
+	display: none;
+}/*決算セール2017.3.3 TRS_SP*/
+
+.ks1703_trs_pcbnr a{
+	/*display:block;*/
+	width:950px;
+	height:219px;
+	/*background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trsp35/wow2_pc170823.jpg) no-repeat top left;*/
+	background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trsp35/rank_170525cp_pc2.jpg) no-repeat top left;
+	margin:0 auto 20px;
+	display:none;
+}/*決算セール2017.3.3 TRS_PC*/
+
+
+.ks1703_trs_spbnr{
+	/*display:block;*/
+	height: 0;
+	/*padding-top:55.93%;
+	background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trsp35/wow_sp170823.jpg) no-repeat top left;*/
+	padding-top:62.18%;
+	background: url(https://image.rakuten.co.jp/shopjapan/cabinet/trsp35/rank_170525cp_sp2.jpg) no-repeat top left;
+	background-size: contain;
+	margin:0;
+	display:none;
+}/*決算セール2017.3.3 TRS_SP*/
+
+
+
+/*****************************************************************************************************************/
+/*WDC2《WDCページ導線》*/
+/*****************************************************************************************************************/
+
+.ks1703_wdc2_pctate{position:fixed;padding:0;margin:0;top:70px;right:0;z-index:10;}/*決算セール2017.3.3 WDC2_TATE*/
+
+.ks1703_wdc2_pctate a{
+	display:block;
+	width:137px;
+	height:336px;
+	margin:0 auto;
+	/*background: url(https://www.rakuten.ne.jp/gold/shopjapan/cp/ks_wake/ke1703_wdc_pc1.png) no-repeat top left;*/
+	background: url(https://www.rakuten.ne.jp/gold/shopjapan/cp/ks_wake/ke1703_wdc_pc2.png) no-repeat top left;
+}/*決算セール2017.3.3 WDC2_PC*/
+
+.ks1703_wdc2_sptate{
+	display:block;
+	width:25%;
+	position: fixed;
+	padding-bottom:125px;
+	bottom:0;
+	right:0;
+	z-index:2147480000;
+}/*決算セール2017.3.3 WDC2_SP*/
+
+.ks1703_wdc2_sptate{
+	width:25%;
+	position:fixed;
+	bottom:125px;
+	right:0;
+	display:block;
+	height:0;
+	margin:0;
+	padding-bottom:51%;
+	/*background: url(https://www.rakuten.ne.jp/gold/shopjapan/cp/ks_wake/ke1703_wdc_sp1.png) no-repeat top left;*/
+	background: url(https://www.rakuten.ne.jp/gold/shopjapan/cp/ks_wake/ke1703_wdc_sp2.png) no-repeat top left;
+	background-size: contain;
+	z-index:2147480000;
+}/*決算セール2017.3.3 WDC2_SP*/
+
+.ks1703_wdc2_pcbnr a{
+	display:block;
+	width:700px;
+	height:278px;
+	margin:0 auto 20px;
+	/*background: url(https://www.rakuten.ne.jp/gold/shopjapan/cp/ks_wake/ke1703_wdc_pc1.jpg) no-repeat top left;*/
+	background: url(https://www.rakuten.ne.jp/gold/shopjapan/cp/ks_wake/ke1703_wdc_pc2.jpg) no-repeat top left;
+	background-size: contain;
+}/*決算セール2017.3.3 WDC2_PC*/
+
+.ks1703_wdc2_spbnr{
+	display:block;
+	height: 0;
+	padding-top:67.66%;
+	/*background: url(https://www.rakuten.ne.jp/gold/shopjapan/cp/ks_wake/ke1703_wdc_sp1.jpg) no-repeat top left;*/
+	background: url(https://www.rakuten.ne.jp/gold/shopjapan/cp/ks_wake/ke1703_wdc_sp2.jpg) no-repeat top left;
+	background-size: contain;
+	margin:0;
+}/*決算セール2017.3.3 WDC2_SP*/
+
+
+
+/*****************************************************************************************************************/
+/*開始終了時の全体操作*/
+/*****************************************************************************************************************/
+
+.ks1703_all{display:none;}/*決算セール2017.3.3 TRSL全体の表示操作*/
+.ks1703_all2{display:none;}/*決算セール2017.3.3 WDC2全体の表示操作*/
+
+
+
+/*****************************************************************************************************************/
+/*GOLDページの操作《いずれかを表示》*/
+/*****************************************************************************************************************/
+
+.ks1703_2_trsl_nsale{display:none;}/*決算セール2017.3.3 TRSL元ページ*/
+.ks1703_2_trsl_ksale{display:none;}/*決算セール2017.3.3 TRSLセールページ3日間*/
+.ks1703_2_trsl_asale{display:none;}/*決算セール2017.3.3 TRSLセールページ延長分*/
+
+
+/*****************************************************************************************************************/
+/*SP看板上クーポン横並び*/
+/*****************************************************************************************************************/
+
+.dou_500{
+	display:block;
+	height: 0;
+	padding-top:30.76923076923077%;
+	background: url(https://www.rakuten.ne.jp/gold/shopjapan/cp/sjsale/500_dou1.jpg) no-repeat top left;
+	margin:0;
+	background-size: contain;
+   /*display:none;*/
+}/*SC単品*/
+
+
+.dou_95{
+	display:block;
+	height: 0;
+	padding-top:30.76923076923077%;
+	background: url(https://www.rakuten.ne.jp/gold/shopjapan/cp/sjsale/95_dou1.jpg) no-repeat top left;
+	margin:0;
+	background-size: contain;
+   /*display:none;*/
+}/*SC単品*/
+
+
+/*****************************************************************************************************************/
+/*TRSP《モッタイナイ市導線》*/
+/*****************************************************************************************************************/
+
+
+.used_dou_trsp {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    right: 0;
+    display: block;
+ /*   height: 0;
+    margin: 0;*/
+    padding-bottom: 17.2%;
+    background: url(https://www.rakuten.ne.jp/gold/shopjapan/cp/used/img/sp_tui_trsp.png) no-repeat top left;
+    background-size: contain;
+    z-index: 2147480000;
+}
+
+.used_dou_trsp_pctate{position:fixed;top:405px;left:0;z-index:9999999999;width: 120px;height: 220px;}/*モッタイナイ市PC縦*/
+
+

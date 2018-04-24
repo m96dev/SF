@@ -1,0 +1,3 @@
+var script = document.createElement('script');
+script.src = '//www.rakuten.ne.jp/gold/kuroko/tags/main.js?' + (new Date()).getTime();
+document.body.appendChild(script);

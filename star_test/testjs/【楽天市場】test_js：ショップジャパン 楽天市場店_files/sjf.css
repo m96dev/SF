@@ -1,0 +1,74 @@
+@charset "EUC-JP";
+/* CSS Document */
+
+.cartButton{width: 41.9% !important;}
+
+body.custom-cart div.cartButton a {
+	font-size: 10px !important;
+	font-weight: bold;
+}
+body.custom-cart div.cartButton > a > img {
+	margin-top: -3px;
+}
+div.cartButton.sj_cartcoupon{
+	visibility: hidden;
+	height: 0px !important;
+	overflow: hidden;
+}
+body.custom-cart div.cartButton.sj_cartcoupon{
+	visibility: visible;
+	position: absolute;
+    width: 16% !important;
+	height: auto !important;
+	top: 0px;
+    border-radius: 2px !important;
+}
+body.custom-cart div.cartButton.sj_cartcoupon > a{
+	display: block !important;
+	padding: 10px 2% !important;
+	border-radius: 3px !important;
+    /*color: #ffffff !important;/*³ÚÅ·¥«¥é¡¼*/
+    color: #000000 !important;/*¥á¥ë¥Þ¥¬ÅÐÏ¿*/
+    font-size: 10px !important;
+    font-weight: bold !important;
+    line-height: 1.0 !important;
+    /*background: #C0282C !important;/*³ÚÅ·¥«¥é¡¼*/
+    background: #ffd200 !important;/*¥á¥ë¥Þ¥¬ÅÐÏ¿*/
+    height: 30px;
+}
+
+body.custom-cart div.cartButton.sj_cartcoupon > a > img{
+    margin-top: -7px;
+    padding: 6% 0 3px 37%;
+    width: 15px;
+    vertical-align: middle;
+    display: block;
+}
+
+body.custom-cart div.cartButton.sj_cartcoupon > a > img:after{
+    content: "¥á¥ë¥Þ¥¬ÅÐÏ¿" !important;
+    color: #000 !important;
+}
+
+body.custom-cart div#floatingCartContainer div.inner,
+body.custom-cart div#fixedCartContainer div.inner {
+	position: relative;
+	/*padding-right: 96px;*/
+}
+body.custom-cart div#floatingCartContainer div.cartButton.sj_cartcoupon {
+	right: 8px !important;
+}
+body.custom-cart div#fixedCartContainer {
+	height: 51px !important;
+}
+body.custom-cart div#fixedCartContainer div.cartButton.sj_cartcoupon {
+	right: 0px;
+}
+
+#floatingCartContainer.cartButtonContainer-single .cartButton {
+    padding: 0 !important;
+}
+
+body.custom-cart div.cartButton.sj_cartcoupon > a{
+    letter-spacing: -1px;
+}

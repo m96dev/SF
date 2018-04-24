@@ -1,0 +1,41 @@
+
+<!-- saved from url=(0041)https://grp15.ias.rakuten.co.jp/gw.js?v=2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><script type="text/javascript">
+
+     var arrSeg = ["dummy","isCa"];
+     var isCpc = 'No';
+     var isCa = 0;
+     var isCaAcq = 0;
+     for (var i = 0; i < arrSeg.length; i++) {
+       if (isCpc === 'No' && arrSeg[i] === 'isCpc') {
+         isCpc = 'Yes';
+       } else if (isCa === 0 && arrSeg[i] === 'isCa') {
+         isCa = 1;
+       } else if (isCaAcq === 0 && arrSeg[i] === 'isCaAcq') {
+         isCaAcq = 1;
+       }
+     }
+
+     var MathTag = {
+          version: "1.0",
+          delimiter: ",",
+          previous_url: "https%3A%2F%2Fwww.rakuten.ne.jp%2Fgold%2Fstarfilter%2Fiframe%2Fsflp-item999.html",
+          industry: "retail",
+          mt_adid: "126262",
+
+          event_type: "product_detail",
+          mt_id: "1185453",
+
+          currency: "jpy",
+          page_name: "item",
+          product_id: "starfilter:10000061",
+          product_category: "101836",
+          product_retail_price: "486",
+          client_status: 0,
+          v3: 'starfilter:10000061'.split(':')[0],
+          v5: isCpc,
+          v6: isCaAcq,
+          v7: isCa
+     }
+</script>
+<script async="" type="text/javascript" src="./js(3)"></script><script src="./js(4)" id="mm_pp_background"></script><iframe src="./iframe(4).html" id="mm_batch_supply_background" style="visibility: hidden; display: none;"></iframe><iframe src="./iframe(5).html" id="mm_sync_back_ground" style="visibility: hidden; display: none;"></iframe></body></html>

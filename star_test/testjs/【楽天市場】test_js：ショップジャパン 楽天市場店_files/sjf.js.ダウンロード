@@ -1,0 +1,10 @@
+// JavaScript Document
+jQuery(document).ready(function($) {
+    var url_item = $("aside#shareButtons li.itemBuyFavBtn a").prop("href");
+    var button_coupon = "<div class=\"cartButton sj_cartcoupon\"><a href=\"https://www.rakuten.co.jp/shopjapan/news.html\" target=\"_blank\"><img src=\"https://www.rakuten.ne.jp/gold/shopjapan/sp/iframe/images/mail.svg\">メルマガ登録</a></div>"; //アイテムクーポンボタンを生成
+    $("div#floatingCartContainer").wrapInner("<div class=\"inner\"></div>"); //フローティング用カートボタンコンテナに、インナーを追加
+    $("div#fixedCartContainer").wrapInner("<div class=\"inner\"></div>"); //固定用カートボタンコンテナに、インナーを追加
+    $("div#floatingCartContainer div.inner").append(button_coupon); //フローティング用カートボタンコンテナに、クーポンボタンを追加
+    $("div#fixedCartContainer div.inner").append(button_coupon); //固定用カートボタンコンテナに、クーポンボタンを追加
+    $("body").addClass("custom-cart");
+});

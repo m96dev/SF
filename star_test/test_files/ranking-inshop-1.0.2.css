@@ -1,0 +1,195 @@
+@charset "euc-jp";
+
+#shopRankingSection .hidden {
+	display: none;
+}
+
+#shopRankingSection {
+	font-size: 100%!important;
+}
+
+#shopRankingSection #inShopRankingDuration {
+	font-size: 12px;
+	width: 98%;
+	text-align: right;
+	margin-right: 2%;
+}
+
+.lHeadRevenue {
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e2e2e2));
+
+	border-top: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+	text-align: left;
+	padding: 7px;
+	font-size: 110%;
+	color: #333333;
+
+	font-style: normal;
+	font-weight: normal;
+
+	-webkit-margin-before: 0.83em;
+	-webkit-margin-after: 0.83em;
+}
+
+
+/* flick-slider-wrapperRanking (show-part) css */
+#flick-slider-wrapperRanking {
+	display: none;
+	margin: auto;
+}
+
+#flick-slider-wrapperRanking #flick-sliderRanking,
+#flick-slider-wrapperRanking #detail {
+	margin: auto;
+}
+
+#flick-slider-wrapperRanking #flick-sliderRanking {
+	overflow: hidden;
+	width: 100%;
+}
+
+#sliderRanking {
+	padding: 5px 0 10px 8px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	font-size: 14pt;
+	-webkit-overflow-scrolling: touch;	/* for iPhone */
+}
+
+/* lightweight process slide-bar for old devices */
+#sliderRanking > * {
+	-webkit-transform: translateZ(0px);
+}
+
+/* each slider ul */
+#sliderRanking ul {
+	width: 140px;
+	margin-top: 6px;
+	margin-left: 8px;
+	border-left: 0px;
+	border-right: 0px;
+	margin-right: 8px;
+	margin-bottom: 20px;
+}
+
+/* webkit scrollbar is not display for this slider */
+#sliderRanking::-webkit-scrollbar {
+	display: none;
+	height: 0 !important;
+}
+
+
+/* each slider item */
+#flick-sliderRanking #sliderRanking .slider-item {
+	display: inline-block;
+	width: 140px;
+	height: auto;	/* adjust 0px = (inline-block auto +4px) -4px */
+	border-left: 0px;
+	border-right: 0px;
+	list-style-type: none;
+	vertical-align: top;
+	margin: 0 4px 0 0;
+}
+
+#flick-sliderRanking #sliderRanking .slider-item.no-border {
+	border: none;
+}
+
+/* <a> element in slider */
+/* #flick-sliderRanking #sliderRanking .slider-item a {*/
+#flick-sliderRanking #sliderRanking a {
+	display: inline-block;
+	width: 140px;
+	height: auto;
+	color: #000000;
+}
+
+#flick-sliderRanking .rankingImageWrap {
+	height: 140px;
+	text-align: center;
+}
+
+/* image in slider-anchor */
+#flick-sliderRanking #sliderRanking .slider-item .slider-image {
+	max-width: 140px;
+	max-height: 140px;
+	vertical-align: middle;
+	margin-top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#flick-sliderRanking .itemRank{
+	color: #bf0000;
+	font-weight: bold;
+	font-size: 16px;
+}
+#flick-sliderRanking .itemName{
+	word-break: break-all;
+	white-space: initial;
+	font-size: 13px;
+	margin-top: 5px;
+}
+
+#flick-sliderRanking .itemPrice{
+	color: #bf0000;
+	font-weight: bold;
+	margin-top: 9px;
+	margin-left: 0px;
+	font-size: 13px !important;
+	text-align: left !important;
+}
+
+
+/* review part */
+#flick-sliderRanking .review span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+}
+
+/* review star 1.0 */
+#flick-sliderRanking .posStar{
+	background-image: url("https://r.r10s.jp/com/img/home/201306/ranking/review_star10.gif");
+}
+
+/* review star 0.0 */
+#flick-sliderRanking .negStar{
+	background-image: url("https://r.r10s.jp/com/img/home/201306/ranking/review_star10_off.gif");
+}
+
+/* review star 0.5 */
+#flick-sliderRanking .halfStar{
+	background-image: url("https://r.r10s.jp/com/img/home/201306/ranking/review_star10_half.gif");
+}
+
+/* slider custom scroll bar */
+#flick-sliderRanking .slider-scrollbar {
+	pointer-events: none;
+	position: relative;
+	border-radius: 3px;
+	z-index: 0;
+	height: 6px;
+	margin-left: 10px;
+	margin-right: 10px;
+	overflow: hidden;
+	background-color: #eeeeee;
+	transform: translateZ(0px);
+	transition-duration: 0ms;
+	-webkit-transition-duration: 0ms;
+	opacity: 0;
+}
+#flick-sliderRanking .slider-scrollbar .scroll-indicator {
+	position: relative;
+	border-radius: 3px;
+	height: 100%;
+	display: block;
+	background: #cccccc;
+	box-sizing: border-box;
+	transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+	-webkit-transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+	width: 5px;
+	-webkit-transform: translate(0px, 0px) translateZ(0px);
+}

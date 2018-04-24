@@ -1,0 +1,177 @@
+@charset "euc-jp";
+
+#shopRevenueLossLeaderSection .hidden {
+	display: none;
+}
+
+/* flick-slider-wrapperLoss (show-part) css */
+#flick-slider-wrapperLoss {
+	display: none;
+	margin: auto;
+}
+
+#flick-slider-wrapperLoss #flick-sliderLoss,
+#flick-slider-wrapperLoss #detail {
+	margin: auto;
+}
+
+#flick-slider-wrapperLoss #flick-sliderLoss {
+	width: 100%;
+	overflow: hidden;
+}
+
+#sliderLoss {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	font-size: 14pt;
+	padding-bottom: 10px;
+	-webkit-overflow-scrolling: touch;	/* for iPhone */
+	padding: 0 0 0 8px;
+}
+
+/* lightweight process slide-bar for old devices */
+#sliderLoss > * {
+	-webkit-transform: translateZ(0px);
+}
+
+/* each slider ul */
+#sliderLoss ul {
+	width: 140px;
+	margin-top: 6px;
+	margin-left: 8px;
+	border-left: 0px;
+	border-right: 0px;
+	margin-right: 8px;
+	margin-bottom: 20px;
+}
+
+/* webkit scrollbar is not display for this slider */
+#sliderLoss::-webkit-scrollbar {
+	display: none;
+	height: 0 !important;
+}
+
+/* each slider item */
+#flick-sliderLoss #sliderLoss .slider-item {
+	display: inline-block;
+	width: 140px;
+	height: auto;
+	border-left: 0px;
+	border-right: 0px;
+	list-style-type: none;
+	vertical-align: top;
+	margin: 0 4px 0 0;
+}
+
+#flick-sliderLoss #sliderLoss .slider-item.no-border {
+	border: none;
+}
+
+/* <a> element in slider */
+/* #flick-sliderLoss #sliderLoss .slider-item a {*/
+#flick-sliderLoss #sliderLoss a {
+	display: inline-block;
+	width: 140px;
+	height: auto;
+	color: #000000;
+}
+
+#flick-sliderLoss .lossImageWrap {
+	height: 140px;
+	text-align: center;
+}
+
+/* image in slider-anchor */
+#flick-sliderLoss #sliderLoss .slider-item .slider-image {
+	width: auto;
+	height: auto;
+	max-width: 140px;
+	max-height: 140px;
+	vertical-align: middle;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#flick-sliderLoss .itemRank{
+	color: #bf0000;
+	font-weight: bold;
+	font-size: 16px;
+}
+#flick-sliderLoss .itemName{
+	word-break: break-all;
+	white-space: initial;
+	font-size: 13px;
+	margin-top: 5px;
+}
+
+#flick-sliderLoss .itemPrice{
+	color: #bf0000;
+	font-weight: bold;
+	margin-top: 9px;
+	margin-left: 0px;
+	font-size: 13px !important;
+	text-align: left !important;
+}
+#flick-sliderLoss .itemPrice .lossItemTax {
+	font-size: 10px;
+	color: #000000;
+}
+/* review part */
+#flick-sliderLoss .review span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+}
+
+/* review star 1.0 */
+#flick-sliderLoss .posStar{
+	background-image: url("https://r.r10s.jp/com/img/home/201306/ranking/review_star10.gif");
+}
+
+/* review star 0.0 */
+#flick-sliderLoss .negStar{
+	background-image: url("https://r.r10s.jp/com/img/home/201306/ranking/review_star10_off.gif");
+}
+
+/* review star 0.5 */
+#flick-sliderLoss .halfStar{
+	background-image: url("https://r.r10s.jp/com/img/home/201306/ranking/review_star10_half.gif");
+}
+
+div#detail {
+	text-align: center;
+}
+
+
+/* slider custom scroll bar */
+#flick-sliderLoss .slider-scrollbar {
+	pointer-events: none;
+	position: relative;
+	border-radius: 3px;
+	z-index: 0;
+	height: 6px;
+	margin-left: 10px;
+	margin-right: 10px;
+	overflow: hidden;
+	background-color: #eeeeee;
+	transform: translateZ(0px);
+	-webkit-transition-duration: 0ms;
+	transition-duration: 0ms;
+	opacity: 0;
+}
+#flick-sliderLoss .slider-scrollbar .scroll-indicator {
+	position: relative;
+	border-radius: 3px;
+	width: 5px;
+	height: 100%;
+	display: block;
+	background: #cccccc;
+	box-sizing: border-box;
+	-webkit-transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+	transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	transform: translate3d(0px, 0px, 0px);
+}

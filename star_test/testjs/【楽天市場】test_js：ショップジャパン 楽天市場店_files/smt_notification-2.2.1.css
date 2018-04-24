@@ -1,0 +1,211 @@
+#header #notification {
+  display: inline-block;
+  width: 45px;
+  vertical-align: middle;
+  color: #333;
+  font-size: 10px;
+  text-align: center;
+  position: relative;
+}
+#header #notification #notificationBadge {
+  display: none;
+}
+#header #notification &gt; p {
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d86363), color-stop(100%, #bf0000));
+  background: -webkit-linear-gradient(top, #d86363 0%, #bf0000 100%);
+  background: linear-gradient(to bottom, #d86363 0%, #bf0000 100%);
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  font-size: 90%;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 1px 7px;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  right: -10px;
+  top: -5px;
+}
+#header #notification &gt; span {
+  display: block;
+}
+#header #notification &gt; span:before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 26px;
+  margin: 6px 0 2px 12px;
+  background: url(https://r.r10s.jp/com/img/home/smart/common/icn_notification.png) no-repeat;
+  -webkit-background-size: 24px 26px;
+  background-size: 24px 26px;
+}
+#notificationList {
+  top: 0;
+  left: 0;
+  display: none;
+  background: #ffffff;
+  -webkit-transition:.4s -webkit-transform ease-in-out;
+  -moz-transition:.4s -moz-transform ease-in-out;
+  -o-transition:.4s -o-transform ease-in-out;
+  transition:.4s transform ease-in-out;
+  /*transform*/
+  -webkit-transform:translate3d(0px, 1600px, 0px);
+  -moz-transform:translate3d(0px, 1600px, 0px);
+  -ms-transform:translate3d(0px, 1600px, 0px);
+  -o-transform:translate3d(0px, 1600px, 0px);
+  transform:translate3d(0px, 1600px, 0px);
+  width: 100%;
+  z-index: 999999;
+  position: absolute;
+  background:#fff
+}
+.ntfOpen{
+  	width: 100%;
+	/*transform*/
+	-webkit-transform:translate3d(0px, 0px, 0px)!important;
+	-moz-transform:translate3d(0px, 0px, 0px)!important;
+	-ms-transform:translate3d(0px, 0px, 0px)!important;
+	-o-transform:translate3d(0px, 0px, 0px)!important;
+	transform:translate3d(0px, 0px, 0px)!important;
+}
+
+.topNtfTtl {
+  padding: 5px;
+  border-bottom: 2px solid #bf0000;
+  position: fixed;
+  width: 100%;
+  background: rgba(255,255,255,0.8);
+  z-index: 100;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+.topNtfTtl h1 {
+  font-size: 110%;
+  font-weight: bold;
+  color: #bf0000;
+}
+.topNtfBtmBtn {
+  margin: 10px 0;
+  text-align: center;
+}
+.topNtfNoApiTxt {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 10px;
+  margin: 0 -5px;
+}
+.topNtfNoApiTxt span {
+  padding: 0 5px;
+}
+.topNtfTtl input, .topNtfBtmBtn input {
+	color: #bf0000;
+	background: #faf9fb;
+	border-radius: 4px;
+	padding: 4px 20px;
+	font-weight: normal;
+	font-size: 13px;
+	display: inline-block;
+	border: 1px solid #999;
+}
+.ritNotificInfo .topNtfNoItem{
+	padding:0;
+}
+#notificationBadge {
+	position: absolute;
+	background: #bf0000;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	font-size: 90%;
+	font-weight: bold;
+	color: #ffffff;
+	padding: 3px 7px 0;
+	border: 2px solid #fff;
+	-webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+	right: -10px;
+	top: -5px;
+}
+#notificationButtonText {
+	display:block;
+}
+#notificationButtonText:before  {
+	content: "";
+	display: block;
+	width: 25px;
+	height: 26px;
+	margin: 6px 0 2px 12px;
+	background: url(https://r.r10s.jp/com/img/home/smart/common/icn_notification.png) no-repeat;
+	-webkit-background-size: 24px 26px;
+	background-size: 24px 26px;
+}
+body {
+min-height: 250px;
+}
+.ritNtfHelp .ntfLoginLink {
+   display: -webkit-box !important;
+  display: box !important;
+  -webkit-box-pack: justify !important;
+  box-pack: justify !important;
+  -webkit-box-align: center !important;
+  box-align: center !important;
+  padding: 15px 7px;
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+}
+.ritNtfHelp .ntfLoginLink:after {
+  content: "";
+  background-repeat: no-repeat;
+  -webkit-background-size: 72px 1000px;
+  background-size: 72px 1000px;
+  background-image: url(https://r.r10s.jp/com/img/home/smart/top/top/201203/icns_01.png);
+  width: 10px;
+  height: 16px;
+  background-position: 100% -434px;
+  position: absolute;
+  right: 7px;
+}
+#notificationList .topNtfLinkList .noBorderTop {
+  border-top: 0px;
+}
+#notificationList .topNtfNoItem {
+  margin-top: 37px;
+}
+#notificationList .topNtfNoItem .topNtfNoItemTtl {
+  padding: 13px 15px 15px 5px;
+  font-weight: bold;
+}
+#notificationList .topNtfLinkList li a {
+  display: block;
+  padding: 15px 15px 15px 5px;
+  color: #333333;
+}
+.topNtfLinkList li {
+  border-bottom: 1px solid #cccccc;
+  position: relative;
+}
+.topNtfLinkList li:after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 40%;
+  border-right: 3px solid #999999;
+  border-bottom: 3px solid #999999;
+  width: 6px;
+  height: 6px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.ritNotificInfo, .topNtfLinkList, .ntfOpen {
+    text-align: left;
+}
+#notificationList a {
+    text-decoration: none;
+}
+#riCmnHdr .topNtfTtl .ntfTtl {
+    padding: unset;
+}

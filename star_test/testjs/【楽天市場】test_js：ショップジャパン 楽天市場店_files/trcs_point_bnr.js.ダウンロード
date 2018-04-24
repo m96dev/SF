@@ -1,0 +1,35 @@
+
+
+/*----------------------下の枠---------------------*/
+
+jQuery(window).bind("load", function(){
+	var url   = location.href;
+	var today = new Date();
+
+	var startday20171017a= new Date('2018/04/10 00:00:00');
+	var endday20171017a= new Date('2018/04/10 23:59:59');
+	var pointup20171017a=
+	'<div id="20171017a" class=""><a href="https://item.rakuten.co.jp/shopjapan/c/0000000596/" target="_blank"><img src="https://www.rakuten.ne.jp/gold/shopjapan/trcs/css/trcs_p_bnr_sp.png" width="100%"></a></div>'
+    if((document.URL.match("https://www.rakuten.ne.jp/gold/shopjapan/sp/")||document.URL.match("https://item.rakuten.co.jp/shopjapan/"))
+	&&( startday20171017a < today && today < endday20171017a)){		
+	jQuery('#offer-notification-cart,#itemImageSlider,#head_coupon').append(pointup20171017a);
+	}else{
+	}
+});
+
+
+
+/*2つの場合*/
+/*
+    var startday20170915c= new Date('2017/9/15 11:00:00');
+	var endday20170915c= new Date('2017/9/19 10:59:00');
+	var pointup20170915c=
+	'<div id="20170915c" class="coupon"><a href="https://item.rakuten.co.jp/shopjapan/c/0000000596/" target="_top" name="spbottom_4000en10%"><img src="https://www.rakuten.ne.jp/gold/shopjapan/cp/coupon/point13_sp.png" width="100%"></a>'+
+	'<a href="https://www.rakuten.ne.jp/gold/shopjapan/" target="_top"><img src="https://www.rakuten.ne.jp/gold/shopjapan/cp/coupon/point13_sp.png" width="100%"></a></div>'
+	if((document.URL.match("https://www.rakuten.ne.jp/gold/shopjapan/sp/")||document.URL.match("https://item.rakuten.co.jp/shopjapan/"))
+	&&( startday20170915c < today && today < endday20170915c)){		
+	jQuery('#itemImageSlider,#head_coupon').append(pointup20170915c);
+	}else{
+	}
+*/
+

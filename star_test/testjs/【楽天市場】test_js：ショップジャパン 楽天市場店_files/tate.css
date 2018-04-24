@@ -1,0 +1,646 @@
+﻿@charset "utf-8";
+
+
+/*****************************************************************************************************************/
+/*縦バナー*/
+/*****************************************************************************************************************/
+
+
+/* ------------------------フッター----------------------------*/
+
+div#tabfoot{
+	width:100%;
+	text-align:center;
+	background:#ED0003;/*赤*/
+	background:#FFF100;/*黄*/
+	height:53px;
+	padding:0;
+	position:fixed;
+	left:0;
+	bottom:0px;
+	z-index: 2147400000;
+}
+
+div#tabfoot iframe{
+	outline:none;
+	display: block;
+	background: url("") no-repeat scroll 0 0 transparent;
+	background-position: center;
+	margin:0 auto;
+	width:950px;
+	height:55px;
+	z-index: 2147400000;
+}
+
+/*-------------tabfoot 非表示の際に適応-------------*/
+
+div#tabfoot {
+	/*display:none;*/
+}
+
+/*--------------------------------------------------*/
+
+/* ------------------------フッターわけあり----------------------------*/
+
+div#tabfoot2{
+	width:100%;
+	text-align:center;
+	background:#ED0003;
+	background:#FFF100;
+	height:53px;
+	padding:0;
+	position:fixed;
+	left:0;
+	bottom:0px;
+	z-index: 2147400000;
+}
+
+div#tabfoot2 iframe{
+	outline:none;
+	display: block;
+	background: url("") no-repeat scroll 0 0 transparent;
+	background-position: center;
+	margin:0 auto;
+	width:950px;
+	height:55px;
+	z-index: 2147400000;
+}
+
+/*-------------tabfoot2 非表示の際に適応-------------*/
+
+div#tabfoot2 {
+	/*display:none;*/
+}
+
+/**--------------------------------------------------*/
+
+/* ------------------------フッターわけあり----------------------------*/
+
+div#tabfoot_coupon{
+	width:100%;
+	text-align:center;
+	background:#ED0003;
+	height:53px;
+	padding:0;
+	position:fixed;
+	left:0;
+	bottom:0px;
+	z-index: 2147400000;
+}
+
+div#tabfoot_coupon iframe{
+	outline:none;
+	display: block;
+	background: url("") no-repeat scroll 0 0 transparent;
+	background-position: center;
+	margin:0 auto;
+	width:950px;
+	height:55px;
+	z-index: 2147483648;
+}
+
+/*-------------tabfoot2 非表示の際に適応-------------*/
+
+div#tabfoot_coupon{
+	display:none;
+}
+
+/**--------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------左上----------------------------*/
+
+div#tab15{
+	position:fixed;
+	top: 70px;
+	left:0px;
+	position: expression('absolute');
+	top: expression((documentElement.scrollTop || document.body.scrollTop) + 70 + 'px');
+	left: expression((documentElement.scrollLeft || document.body.scrollLeft) + 0 + 'px');
+	text-indent:-9999px;
+	z-index:99999;
+}
+
+div#tab15 a {
+	outline:none;
+	display: block;
+	/*background: url("https://www.rakuten.ne.jp/gold/shopjapan/images/tate/tate_160905.png") no-repeat scroll 0 0 transparent;*/
+	background: url("https://www.rakuten.ne.jp/gold/shopjapan/images/tate/p7.png") no-repeat scroll 0 0 transparent;
+	background-position: 0px 0px;
+	width:106px;
+	height:130px;/*通常サイズ*/
+	/*height:449px;*//*ロングサイズ*/
+	transition: 0.5s;
+}
+	
+div#tab15 a:hover{
+	opacity:0.6;
+}
+
+/*-----------tab15 非表示の際に適応-------------*/
+
+div#tab15 {
+	display:none;
+}
+
+/*--------------------------------------------------*/
+
+
+/*------------------------左中----------------------------*/
+
+div#tab16{
+	position:fixed;
+	top: 210px;
+	left: 0px;
+	position: expression('absolute');
+	top: expression((documentElement.scrollTop || document.body.scrollTop) + 210 + 'px');
+	left: expression((documentElement.scrollLeft || document.body.scrollLeft) + 0 + 'px');
+	text-indent:-9999px;
+	z-index:99999;
+}
+	
+div#tab16 a{
+	outline:none;
+	display: block;
+	background: url("https://www.rakuten.ne.jp/gold/shopjapan/images/tate/stp/stp_0523.png") no-repeat scroll 0 0 transparent;  
+	background-position: -194px 0px;
+	width: 106px;
+	height: 130px; 
+}
+
+div#tab16 a:hover{
+	outline:none;
+	display: block;
+	background: url("https://www.rakuten.ne.jp/gold/shopjapan/images/tate/stp/stp_0523.png") no-repeat scroll 0 0 transparent;
+	background-position: 0px 0px;
+	width: 300px;
+	height: 130px;
+	-webkit-transition: all 0.5s ease; 
+	-moz-transition: all 0.5s ease; 
+	-o-transition: all 0.5s ease; 
+}
+
+/*-----------tab16 非表示の際に適応-------------
+
+div#tab16 {
+	display:none;
+}
+
+/*--------------------------------------------------*/
+
+
+/* ------------------------左下----------------------------*/
+
+div#tab08{
+	position:fixed;
+	top: 350px;
+	left: 0px;
+	position: expression('absolute');
+	top: expression((documentElement.scrollTop || document.body.scrollTop) + 350 + 'px');
+	left: expression((documentElement.scrollLeft || document.body.scrollLeft) + 0 + 'px');
+	text-indent:-9999px;
+	z-index:99999;
+}
+	
+div#tab08 a{
+	outline:none;
+	display: block;
+	background: url("https://www.rakuten.ne.jp/gold/shopjapan/images/tate/trs/trs_0121.png") no-repeat scroll 0 0 transparent;  
+	background-position: -194px 0px;
+	width: 106px;
+	height: 130px; 
+}
+
+div#tab08 a:hover{
+	outline:none;
+	display: block;
+	background: url("https://www.rakuten.ne.jp/gold/shopjapan/images/tate/trs/trs_0121.png") no-repeat scroll 0 0 transparent;
+	background-position: 0px 0px;
+	width: 300px;
+	height: 130px;
+	-webkit-transition: all 0.5s ease; 
+	-moz-transition: all 0.5s ease; 
+	-o-transition: all 0.5s ease; 
+}
+
+/*-----------tab08 非表示の際に適応-------------*/
+
+div#tab08 {
+	display:none;
+}
+
+/*--------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------右上(WDCワケあり)----------------------------*/
+
+div#tab30{
+	position:fixed;
+	top:70px;
+	right:0px;
+	position: expression('absolute');
+	top: expression((documentElement.scrollTop || document.body.scrollTop) + 70 + 'px');
+	left: expression((documentElement.scrollLeft || document.body.scrollLeft) + 0 + 'px');
+	text-indent:-9999px;
+	z-index:99999;
+}
+
+div#tab30 a {
+	outline:none;
+	display: block;
+	background: url("https://www.rakuten.ne.jp/gold/shopjapan/images/tate/wds_sage_tate2.png") no-repeat scroll 0 0 transparent;
+	background-position: 0px 0px;
+	width: 106px;
+	height: 130px;
+	transition: 0.5s;
+}
+	
+div#tab30 a:hover{
+	opacity:0.6;
+}
+
+/*--------------tab30 非表示の際に適応-------------*/
+
+div#tab30 {
+	display:none;
+}
+
+/*--------------------------------------------------*/
+
+/* ------------------------右上(WDCワケあり)----------------------------*/
+
+div#tab31{
+	position:fixed;
+	top:70px;
+	right:0px;
+	position: expression('absolute');
+	top: expression((documentElement.scrollTop || document.body.scrollTop) + 70 + 'px');
+	left: expression((documentElement.scrollLeft || document.body.scrollLeft) + 0 + 'px');
+	text-indent:-9999px;
+	z-index:99999;
+}
+
+div#tab31{
+	outline:none;
+	display: block;
+	background: url("https://www.rakuten.ne.jp/gold/shopjapan/images/tate/wds_sage_tate.png") no-repeat scroll 0 0 transparent;
+	background-position: 0px 0px;
+	width: 106px;
+	height: 130px;
+	transition: 0.5s;
+}
+	
+div#tab31 a:hover{
+	opacity:0.6;
+}
+
+/*--------------tab30 非表示の際に適応--------------*/
+
+div#tab31 {
+	display:none;
+}
+
+/*--------------------------------------------------*/
+
+/* ------------------------右上----------------------------*/
+
+div#tab14{
+  position:fixed;
+  top:70px;
+  right:0px;
+  position: expression('absolute');
+  top: expression((documentElement.scrollTop || document.body.scrollTop) + 70 + 'px');
+  right: expression((documentElement.scrollLeft || document.body.scrollLeft) + 0 + 'px');
+  text-indent:-9999px;
+  z-index:99999;
+}
+
+div#tab14 a {
+	outline:none;
+	display: block;
+	background: url("https://www.rakuten.ne.jp/gold/shopjapan/images/tate/wds/wds_0711.png") no-repeat scroll 0 0 transparent;
+	background-position: 0px 0px;
+	width: 106px;
+	height: 130px;
+ }
+	
+div#tab14 a:hover{
+	outline:none;
+	display: block;
+	background: url("https://www.rakuten.ne.jp/gold/shopjapan/images/tate/wds/wds_0711.png") no-repeat scroll 0 0 transparent;  
+	background-position: 0px 0px;
+	width: 300px;
+	height: 130px;
+	-webkit-transition: all 0.5s ease; 
+	-moz-transition: all 0.5s ease; 
+	-o-transition: all 0.5s ease; 
+}
+
+/* -----------tab14 非表示の際に適応-------------
+
+div#tab14 {
+	display:none;
+}
+
+--------------------------------------------------*/
+
+
+/* ------------------------右中----------------------------*/
+
+div#tab17{
+	position:fixed;
+	top: 210px;
+	right:0px;
+	position: expression('absolute');
+	top: expression((documentElement.scrollTop || document.body.scrollTop) + 210 + 'px');
+	right: expression((documentElement.scrollLeft || document.body.scrollLeft) + 0 + 'px');
+	text-indent:-9999px;
+	z-index:99999;
+}
+
+div#tab17 a {
+	outline:none;
+	display: block;
+	background: url("https://www.rakuten.ne.jp/gold/shopjapan/images/tate/trs/trs_0704.png") no-repeat scroll 0 0 transparent;  
+	background-position: 0px 0px;
+	width: 105px;
+	height: 130px;
+ }
+	
+div#tab17 a:hover{
+	outline:none;
+	display: block;
+	background: url("https://www.rakuten.ne.jp/gold/shopjapan/images/tate/trs/trs_0704.png") no-repeat scroll 0 0 transparent;
+	background-position: 0px 0px;
+	width: 300px;
+	height: 130px;
+	-webkit-transition: all 0.5s ease; 
+	-moz-transition: all 0.5s ease; 
+	-o-transition: all 0.5s ease; 
+}
+
+/* -----------tab17 非表示の際に適応-------------
+
+div#tab17 {
+	display:none;
+}
+
+--------------------------------------------------*/
+
+
+
+/* ------------------------右下----------------------------*/
+
+div#tab09{
+	position:fixed;
+	top:350px;
+	right:0px;
+	position: expression('absolute');
+	top: expression((documentElement.scrollTop || document.body.scrollTop) + 350 + 'px');
+	right: expression((documentElement.scrollLeft || document.body.scrollLeft) + 0 + 'px');
+	text-indent:-9999px;
+	z-index:99999;
+}
+
+div#tab09 a {
+	outline:none;
+	display: block;
+	background: url("https://www.rakuten.ne.jp/gold/shopjapan/images/tate/stp/stp_0205.png") no-repeat scroll 0 0 transparent;  
+	background-position: 0px 0px;
+	width: 105px;
+	height: 130px;
+ }
+	
+div#tab09 a:hover{
+	outline:none;
+	display: block;
+	background: url("https://www.rakuten.ne.jp/gold/shopjapan/images/tate/stp/stp_0205.png") no-repeat scroll 0 0 transparent;
+	background-position: 0px 0px;
+	width: 300px;
+	height: 130px;
+	-webkit-transition: all 0.5s ease; 
+	-moz-transition: all 0.5s ease; 
+	-o-transition: all 0.5s ease; 
+}
+	
+/* -----------tab16 非表示の際に適応-------------*/
+
+div#tab09 {
+	display:none;
+}
+
+/*--------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************************************************************/
+/*160914縦バナー*/
+/*****************************************************************************************************************/
+
+div#left_tate{
+	position:fixed;
+	width:150px;
+	height:615px;
+	top: 0;
+	left: 0;
+	/*background: url(../images/tate/hour4_c3.png)repeat-y top left;*/
+	/*background: url(https://www.rakuten.ne.jp/gold/shopjapan/images/tate/tate_160930.png)repeat-y top left;*/
+	background: url(https://www.rakuten.ne.jp/gold/shopjapan/images/tate/tate_161007.png)repeat-y top left;
+	z-index:2147483648;
+	display: none;
+}
+
+div#right_tate{
+	position:fixed;
+	width:136px;
+	height:377px;
+	top: 70px;
+	right: 0;
+	z-index: 99999999;
+	display: none;	
+}
+
+div#right_tate_top{
+	position:fixed;
+	width:109px;
+	height:248px;
+	top: 35px;
+	right: 0;
+	z-index: 99999999;
+}
+
+div#right_tate_bot{
+	position: fixed;
+	right: 0;
+	width: 108px;
+	top:227px;
+	margin-top:0;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	z-index: 99999998;
+}
+
+div#right_tate_bot:hover{
+	margin-top:56px;
+}
+
+div#left_wow{
+	position:fixed;
+	background: url(https://www.rakuten.ne.jp/gold/shopjapan/images/tate/wow.jpg) repeat-y top left;
+	width:150px;
+	height:100%;
+	top: 0;
+	left: 0;
+	z-index:-1;
+	display: none;
+}
+
+div#right_wow{
+	position:fixed;
+	background: url(https://www.rakuten.ne.jp/gold/shopjapan/images/tate/wow.jpg) repeat-y top right;
+	width:150px;
+	height:100%;
+	top: 0;
+	right: 0;
+	z-index:-1;
+	display: none;
+}
+
+
+
+/*****************************************************************************************************************/
+/*SP縦追従バナー*/
+/*****************************************************************************************************************/
+
+.floattate_sp{
+	width:25%;
+	position: fixed;
+	bottom:125px;
+	right:0;
+	z-index: 2147480000;
+}
+
+.floattate_sp a{
+	width:100%;
+}
+
+.floattate_sp a img{
+	width:100%;
+}
+
+.floattate_sp img{
+	width:100%;
+}
+
+
+
+
+/*****************************************************************************************************************/
+/*追従全体操作*/
+/*****************************************************************************************************************/
+
+
+.floattate_pc{
+	position:fixed;
+	top:150px;
+	left:0;
+	z-index: 9999999;
+}
+
+.floatfoot_pc{
+	width:100%;
+	position:fixed;
+	bottom:0;
+	left:0;
+	text-align: center;
+	z-index: 9999999;
+	background-color:#eb0623;
+}
+
+/*.item_desc iframe,
+.category_uppertext iframe,
+.category_lowertext iframe{
+	z-index: 100001 !important;
+}*/
+
+.floattate_pc{
+	/*display:block;*/
+	display:none;
+}
+
+.floatfoot_pc{
+	/*display:block;*/
+	display:none;
+}
+
+.floattate_sp{
+	/*display:block;*/
+	display:none;
+}
+
+.floatfoot_sp{
+	/*display:block;*/
+	display:none;
+}
+
+.all_item{
+	/*display:block;*/
+	display:none;
+}
+
+.floatfoot_pc{
+	display:none;
+}/*全体縦出すけど下出したくない時*/
+
+.floatfoot_sp{
+	display:none;
+}/*全体縦出すけど下出したくない時*/
+
+.floattate_sp{
+	display:none;
+}/*全体縦出すけど下出したくない時*/
+
+@media screen and (max-width:1280px){
+#tab07 , #tab08 , #tab09 , #tab13 , #tab14 , #tab15 , #tab16 , #tab17 , #left_wow , #right_wow , #left_tate , #right_tate{
+	visibility: hidden;
+	}
+}
+
+@media screen and (max-width:1280px){
+.floattate_pc{
+	visibility: hidden;
+	}
+}

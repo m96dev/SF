@@ -1,0 +1,290 @@
+var BAMBOOSHOOT_ONE = {}
+
+BAMBOOSHOOT_ONE.SCRIPT_ID = 'bambooshoot-tag';
+
+BAMBOOSHOOT_ONE.PRD_HOST = 'api.ad.bambooshoot.io';
+BAMBOOSHOOT_ONE.STG_HOST = 'stg.api.ad.bambooshoot.io';
+
+BAMBOOSHOOT_ONE.initialized = false;
+
+BAMBOOSHOOT_ONE.sendConversion = function(url, tag_id) {
+    var iframe_tag = document.createElement("iframe");
+    iframe_tag.id = tag_id;
+    iframe_tag.setAttribute("src", url);
+    iframe_tag.style.cssText = "border: none; width: 1px; height: 1px; position: absolute; left: -10000px";
+    if (!document.getElementById(tag_id)) {
+        return document.body.appendChild(iframe_tag);
+    }
+};
+
+BAMBOOSHOOT_ONE.callback = function (data) {
+    if (data.tracking_data) {
+        var element = document.getElementById(BAMBOOSHOOT_ONE.SCRIPT_ID);
+        var tracking_data = data.tracking_data;
+        var tracker_host = data.tracker_host || (element.getAttribute('env') == 'staging' ? BAMBOOSHOOT_ONE.STG_HOST : BAMBOOSHOOT_ONE.PRD_HOST);
+
+        /* CV */
+        (function($) {
+            $(function() {
+                var cookies;
+                function readCookie(name) {
+                    if (cookies) { return cookies[name]; }
+
+                    var c = document.cookie.split('; ');
+                    cookies = {};
+
+                    for(i = c.length - 1; i >= 0; i--){
+                        var C = c[i].split('=');
+                        cookies[C[0]] = C[1];
+                    }
+
+                    return cookies[name];
+                }
+
+                var cart = $('#fixedAddToCart, #floatingAddToCart, #floatingCheckOut, #fixedCheckOut, #regularCart input[type=submit], #itemCart button, #regularCart > input[type="submit"], .itemBuyCartBtnRegular.normalCart input.normalCartText');
+                cart.bind('touchstart', function(event) {
+                    var url = document.URL.split("?")[0];
+                    for (var provider in tracking_data) {
+                        var conv_url = '//' + tracker_host + '/v1/conversion?ttid=' + tracking_data[provider].id + '&device=sp&pr=' + provider + '&url=' + encodeURIComponent(url) + (readCookie('Rt') ? '&rt=' + readCookie('Rt') : '');
+                        var tag_id = provider + '_' + tracking_data[provider].id;
+                        BAMBOOSHOOT_ONE.sendConversion(conv_url, tag_id);
+                    }
+                });
+
+                const choise = $('#orderForm [name=choice]');
+                choise.bind('change', function(event) {
+                    BAMBOOSHOOT_ONE.optionUpdated = true;
+                });
+                const cartNumberInput = $('#orderForm .cartNumberInput');
+                cartNumberInput.bind('focus', function(event) {
+                    BAMBOOSHOOT_ONE.optionUpdated = true;
+                });
+                const cartNumberSelect = $('#orderForm .cartNumberSelect');
+                cartNumberSelect.bind('change', function(event) {
+                    BAMBOOSHOOT_ONE.optionUpdated = true;
+                });
+                const increment = $('#itemCart .increment');
+                increment.bind('touchend', function(event) {
+                    BAMBOOSHOOT_ONE.optionUpdated = true;
+                });
+
+                var cart2 = $('#fixedAddToCart, #floatingAddToCart, #floatingCheckOut, #fixedCheckOut, #regularCart input[type=submit], #regularCart > input[type="submit"], .itemBuyCartBtnRegular.normalCart input.normalCartText');
+                cart2.bind('click', function(event) {
+                    if ($('#itemSelectPopUp .itemSelectRadio').length > 0 && $('#itemSelectPopUp .itemSelectRadio:checked').length === 0) {
+                        return;
+                    }
+
+                    if ($('#itemSelectPopUp .itemSelectRadio').length === 0 && $('#orderForm [name=choice]').length > 0 && !BAMBOOSHOOT_ONE.optionUpdated) {
+                        return;
+                    }
+
+                    var url = document.URL.split("?")[0];
+
+                    // Send all conversions - only 1 request (no ads related fields)
+                    var all_conv_url = '//' + tracker_host + '/v1/allConversion?device=sp&url=' + encodeURIComponent(url) + (readCookie('Rt') ? '&rt=' + readCookie('Rt') : '');
+                    BAMBOOSHOOT_ONE.sendConversion(all_conv_url, 'tracking_tag_organic');
+
+                    for (var provider in tracking_data) {
+                        var conv_url = '//' + tracker_host + '/v1/conversionTemp?ttid=' + tracking_data[provider].id + '&device=sp&pr=' + provider + '&url=' + encodeURIComponent(url) + (readCookie('Rt') ? '&rt=' + readCookie('Rt') : '');
+                        var tag_id = provider + '_' + tracking_data[provider].id + '_temp_tracking';
+                        BAMBOOSHOOT_ONE.sendConversion(conv_url, tag_id);
+                    }
+                });
+
+                var cartOnPopUp = $('div#floatingCartPopUp button.checkoutButton, div#floatingCartPopUp button.addToCartButton');
+                cartOnPopUp.bind('click', function(event) {
+                    if ($('div#floatingCartPopUp .itemSelectRadio').length > 0 && $('div#floatingCartPopUp .itemSelectRadio:checked').length === 0) {
+                        return;
+                    }
+
+                    var url = document.URL.split("?")[0];
+
+                    // Send all conversions - only 1 request (no ads related fields)
+                    var all_conv_url = '//' + tracker_host + '/v1/allConversion?device=sp&url=' + encodeURIComponent(url) + (readCookie('Rt') ? '&rt=' + readCookie('Rt') : '');
+                    BAMBOOSHOOT_ONE.sendConversion(all_conv_url, 'tracking_tag_organic');
+
+                    for (var provider in tracking_data) {
+                        var conv_url = '//' + tracker_host + '/v1/conversionTemp?ttid=' + tracking_data[provider].id + '&device=sp&pr=' + provider + '&url=' + encodeURIComponent(url) + (readCookie('Rt') ? '&rt=' + readCookie('Rt') : '');
+                        var tag_id = provider + '_' + tracking_data[provider].id + '_temp_tracking';
+                        BAMBOOSHOOT_ONE.sendConversion(conv_url, tag_id);
+                    }
+                });
+            });
+        })(jQuery);
+
+        /* retarget */
+
+        // freakout
+        if (tracking_data.freakout && tracking_data.freakout.id && data.item_url) {
+            var _fout_queue = _fout_queue || {}; if (_fout_queue.segment === void 0) _fout_queue.segment = {};
+            if (_fout_queue.segment.queue === void 0) _fout_queue.segment.queue = [];
+
+            _fout_queue.segment.queue.push({
+                'user_id': tracking_data.freakout.id,
+                'ex_url': data.item_url
+            });
+            var el = document.createElement('script'); el.type = 'text/javascript'; el.async = true;
+            el.src = (('https:' == document.location.protocol) ? 'https://' : 'http://') + 'js.fout.jp/segmentation.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(el, s);
+        }
+
+        // imobile
+        if (tracking_data.imobile && tracking_data.imobile.id && tracking_data.imobile.cq) {
+            imobile_adv_sid = tracking_data.imobile.id;
+            imobile_adv_cq = tracking_data.imobile.cq;
+            var script = document.createElement('script');
+            script.src = '//spdmg.i-mobile.co.jp/script/dg_gateway.js?20120316';
+            document.body.appendChild(script);
+            script = document.createElement('script');
+            script.src = '//spcnv.i-mobile.co.jp/script/adv_inner.js?20120316';
+            document.body.appendChild(script);
+        }
+
+        // evory
+        if (tracking_data.evory && tracking_data.evory.id) {
+            var url = encodeURIComponent((window.top == window.self) ? document.URL : document.referrer);
+            var src = "//dex.advg.jp/dx/p/us" + "?_aid=" + tracking_data.evory.id;
+            src += "&_url=" + url;
+            src += "&_nocache=" + (new Date).getTime() + Math.floor(Math.random() * 100000000);
+
+            var us = document.createElement('script');
+            us.type = 'text/javascript';
+            us.src = src;
+            us.async = true;
+            us.defer = true;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(us, s);
+        }
+    }
+
+    if (data.ga_data && data.ga_data.tracking_id && data.ga_data.gtm_id) {
+        // GA
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', data.ga_data.tracking_id, {'cookieDomain': 'auto', 'alwaysSendReferrer': true});
+        ga('send', 'pageview');
+
+        // GTM
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer',data.ga_data.gtm_id);
+    }
+
+    (function($) {
+        var cookies;
+        function readCookie(name) {
+            if (cookies) { return cookies[name]; }
+
+            var c = document.cookie.split('; ');
+            cookies = {};
+
+            for(i = c.length - 1; i >= 0; i--){
+                var C = c[i].split('=');
+                cookies[C[0]] = C[1];
+            }
+
+            return cookies[name];
+        }
+
+        var rtImg = $('img[src^="//m.rt.rakuten.co.jp/smp_rms"]');
+
+        // Temp: for test purpose, check if cookie is enabled for bb_ads api
+        function isCcEnabled() {
+            var queryString = document.URL.split("?")[1];
+            if (queryString) {
+                var match = queryString.match(/sZPIEPSXhuodnF=([^&,#]+)/);
+
+                return match && match[1];
+            }
+            return null;
+        }
+
+        if (rtImg.length > 0) {
+            if (rtImg[0].complete) {
+                var url = document.URL.split("?")[0];
+                for (var provider in tracking_data) {
+                    var conv_url = '//' + tracker_host + '/v2/impression?ttid=' + tracking_data[provider].id + '&device=sp&pr=' + provider + '&url=' + encodeURIComponent(url) + (readCookie('Rt') ? '&rt=' + readCookie('Rt') : '');
+                    var tag_id = provider + '_' + tracking_data[provider].id + '_impression';
+                    BAMBOOSHOOT_ONE.sendConversion(conv_url, tag_id);
+                }
+                // Test purpose
+                var ccEnabled = isCcEnabled();
+                var testCcEnabledQueries = '';
+                if (ccEnabled !== null) {
+                    var tdList = [];
+                    for (var provider in tracking_data) {
+                        tdList.push(provider + ':' + tracking_data[provider].id);
+                    }
+                    testCcEnabledQueries = '&cc_enabled=' + ccEnabled + '&td=' + tdList.join(',');
+                }
+                // allImpression
+                var conv_url = '//' + tracker_host + '/v2/allImpression?device=sp&url=' + encodeURIComponent(url) + (readCookie('Rt') ? '&rt=' + readCookie('Rt') : '') + testCcEnabledQueries;
+                // send only one request
+                BAMBOOSHOOT_ONE.sendConversion(conv_url, 'all_page_impressions');
+            } else {
+                rtImg.one('load error', function(event) {
+                    var url = document.URL.split("?")[0];
+                    for (var provider in tracking_data) {
+                        var conv_url = '//' + tracker_host + '/v2/impression?ttid=' + tracking_data[provider].id + '&device=sp&pr=' + provider + '&url=' + encodeURIComponent(url) + (readCookie('Rt') ? '&rt=' + readCookie('Rt') : '');
+                        var tag_id = provider + '_' + tracking_data[provider].id + '_impression';
+                        BAMBOOSHOOT_ONE.sendConversion(conv_url, tag_id);
+                    }
+                    // Test purpose
+                    var ccEnabled = isCcEnabled();
+                    var testCcEnabledQueries = '';
+                    if (ccEnabled !== null) {
+                        var tdList = [];
+                        for (var provider in tracking_data) {
+                            tdList.push(provider + ':' + tracking_data[provider].id);
+                        }
+                        testCcEnabledQueries = '&cc_enabled=' + ccEnabled + '&td=' + tdList.join(',');
+                    }
+                    // allImpression
+                    var conv_url = '//' + tracker_host + '/v2/allImpression?device=sp&url=' + encodeURIComponent(url) + (readCookie('Rt') ? '&rt=' + readCookie('Rt') : '')  + testCcEnabledQueries;
+                    // send only one request
+                    BAMBOOSHOOT_ONE.sendConversion(conv_url, 'all_page_impressions');
+                });
+            }
+        }
+    })(jQuery);
+};
+
+BAMBOOSHOOT_ONE.requestJsonp = function (url, options) {
+    var script = document.createElement('script');
+    script.src = url;
+    var head = document.head;
+    if (!head) {
+        head = document.getElementsByTagName('head')[0];
+    }
+    head.appendChild(script);
+};
+
+BAMBOOSHOOT_ONE.init = function() {
+    if (BAMBOOSHOOT_ONE.initialized) {
+        return false;
+    }
+
+    // Get item url for each device type
+    var el = document.getElementById(BAMBOOSHOOT_ONE.SCRIPT_ID);
+    var host = el.getAttribute('env') == 'staging' ? BAMBOOSHOOT_ONE.STG_HOST : BAMBOOSHOOT_ONE.PRD_HOST;
+    var item_url = el.getAttribute('device') == 'pc' ? document.referrer.split('?')[0] : document.URL.split('?')[0];
+
+    var base_url = '//' + host + '/v1/tag/one?item_url=';
+    var url = base_url + encodeURIComponent(item_url) + '&callback=BAMBOOSHOOT_ONE.callback';
+
+    // Request to API
+    BAMBOOSHOOT_ONE.requestJsonp(url);
+
+    BAMBOOSHOOT_ONE.initialized = true;
+    return true;
+};
+
+
+(function() {
+    BAMBOOSHOOT_ONE.init();
+}());

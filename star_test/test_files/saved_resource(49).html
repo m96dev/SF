@@ -1,0 +1,54 @@
+
+<!-- saved from url=(0041)https://grp15.ias.rakuten.co.jp/gw.js?v=2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><!--  Product page tag ---->
+<script type="text/javascript" src="./ld.js.ダウンロード" async="true"></script>
+<script type="text/javascript" src="./common.js.ダウンロード"></script>
+<script type="text/javascript">
+ 
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+ 
+ 
+var SiteType = '';
+var user_seg = '';
+ 
+if ('sp' == 'pc') {
+    user_segment_param = '1';
+    SiteType = 'd';
+} else {
+    user_segment_param = '2';
+    SiteType = 'm';
+}
+ 
+if (getParameterByName("icm_disp_cto_id", unescape("https%3A%2F%2Fitem.rakuten.co.jp%2Fstarfilter%2Fsf01-01%2F%23sf01-01")) == "140819") {
+    user_seg = "affinity";
+} else {
+    user_seg = ""
+}
+var segId = grp15ULD(["dummy"]);
+ 
+ 
+window.criteo_q = window.criteo_q || [];
+window.criteo_q.push({
+    event: "setAccount",
+    account: 3242
+}, {
+    event: "setSiteType",
+    type: SiteType
+}, {
+    event: "viewItem",
+    item: "starfilter:10000061",
+    user_segment: "",
+    ui_usrlvl: segId,
+    ref: "https%3A%2F%2Fwww.rakuten.ne.jp%2Fgold%2Fstarfilter%2Fiframe%2Fsflp-item999.html",
+    ui_media: user_seg
+});
+ 
+</script><div id="criteo-tags-div" style="display: none;"></div></body></html>
