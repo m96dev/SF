@@ -369,13 +369,14 @@
 
 <link rel="stylesheet" href="menu_area.css">
   <link rel="stylesheet" href="./test_item/hiraku.min.css">
+  <link rel="stylesheet" href="./test_item/accordion.min.css">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <script
   src="http://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script src="./test_item/hiraku.min.js"></script>
-
+  <script src="./test_item/accordion.min.js"></script>
 
 <div id="hum_header" ="">
   <div id="header_hum_bt">
@@ -404,18 +405,34 @@
     <img src="test_item/test_img.jpg" alt="テスト">
   </div>
 
+  <div class="ui accordion">
+    <div class="title">HOME <i class="dropdown icon"></i></div>
+    <div class="title">レンジフードフィルター<i class="dropdown icon"></i></div>
+      <div class="content">
+        <p class="transition hidden"></p>
+      </div>
+    <div class="title">花粉ブロック換気口フィルター <i class="dropdown icon"></i></div>
+    <div class="title">レンジフードクリーナー <i class="dropdown icon"></i></div>
+    <div class="title">Q&A <i class="dropdown icon"></i></div>
+    <div class="title">お支払い・配送について <i class="dropdown icon"></i></div>
+  </div>
+
 <!-- サイドコンテンツここまで -->
 
 </div>
 
   <script>
+
+    $('.ui.accordion')
+    .accordion()
+    ;
   $(".offcanvas-right").hiraku({
     btn:"#offcanvas-btn-right",
     fixedHeader: "#hum_header",
     direction:"left"
   });
-  </script>
 
+  </script>
 <!-- ヘッダー　ここまで -->
 
 
