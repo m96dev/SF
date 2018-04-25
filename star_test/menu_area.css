@@ -40,11 +40,16 @@
 
 /* サイドメニューエリア */
 .offcanvas-right {
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
+
 .sidemenu_banner_box{
   width: 90%;
   margin: 10px auto 20px auto;
   text-align: center;
+}
+.sidemenu_banner_box h3{
+  font-weight: bold;
 }
 .sidemenu_banner_box img{
   width: 100%;
