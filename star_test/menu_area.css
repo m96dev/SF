@@ -38,10 +38,35 @@
   margin-right: 10px;
 }
 
+/* サイドメニューエリア */
 .offcanvas-right {
 }
+.sidemenu_banner_box{
+  width: 90%;
+  margin: 10px auto 20px auto;
+  text-align: center;
+}
+.sidemenu_banner_box img{
+  width: 100%;
+}
 
+.sidemenu_banner_box h3{
+  font-size: 120%;
+  margin-bottom: 5px;
+}
+.accordion{
+  width: 90%;
+  margin: 0 auto;
+}
+.accordion_txt{
+  float: left;
+}
+
+.accordion_bt{
+  float: right;
+}
 /* 他のCSSの操作 */
+  /* 既存ヘッダーの上位置調整 */
 #ipnsh-header{
   margin-top: 50px;
 }

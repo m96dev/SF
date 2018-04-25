@@ -380,7 +380,7 @@
 
 <div id="hum_header" ="">
   <div id="header_hum_bt">
-      <button class="hiraku-open-btn" id="offcanvas-btn-right" data-toggle-offcanvas="#js-hiraku-offcanvas-1">
+      <button class="hiraku-open-btn" id="offcanvas-btn-right" data-toggle-offcanvas="#js-hiraku-offcanvas-1" ="">
           <span class="hiraku-open-btn-line"></span>
       </button>
   </div>
@@ -398,19 +398,27 @@
 
   <div class="sidemenu_banner_box">
     <h3>お得なキャンペーンはこちら</h3>
-    <img src="test_item/test_img.jpg" alt="テスト">
+    <img src="test_item/sample.jpg" alt="テスト">
   </div>
   <div class="sidemenu_banner_box">
     <h3>新商品はこちら</h3>
-    <img src="test_item/test_img.jpg" alt="テスト">
+    <img src="test_item/sample.jpg" alt="テスト">
   </div>
 
   <div class="ui accordion">
-    <div class="title">HOME <i class="dropdown icon"></i></div>
-    <div class="title">レンジフードフィルター<i class="dropdown icon"></i></div>
+    <div class="title">
+      <div class="accordion_txt"><a href="./">HOME</a></div>
+      <div class="accordion_bt"><i class="dropdown icon"></i></div>
+    <br class="clear:both;"></div>
+
+    <div class="title">
+      <div class="accordion_txt">レンジフードフィルター</div>
+      <div class="accordion_bt"><i class="dropdown icon"></i></div>
+    <br class="clear:both;"></div>
       <div class="content">
         <p class="transition hidden"></p>
       </div>
+
     <div class="title">花粉ブロック換気口フィルター <i class="dropdown icon"></i></div>
     <div class="title">レンジフードクリーナー <i class="dropdown icon"></i></div>
     <div class="title">Q&A <i class="dropdown icon"></i></div>
@@ -423,16 +431,17 @@
 
   <script>
 
-    $('.ui.accordion')
-    .accordion()
-    ;
   $(".offcanvas-right").hiraku({
     btn:"#offcanvas-btn-right",
     fixedHeader: "#hum_header",
     direction:"left"
   });
 
+  $('.ui.accordion')
+  .accordion()
+  ;
   </script>
+
 <!-- ヘッダー　ここまで -->
 
 
