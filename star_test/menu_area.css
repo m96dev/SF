@@ -58,12 +58,31 @@
   width: 90%;
   margin: 0 auto;
 }
-.accordion_txt{
-  float: left;
-}
 
 .accordion_bt{
+  border-bottom: 1px #555 solid;
+}
+.accordion_bt2{
+  border-bottom: 1px #555 dotted;
+}
+
+.accordion_txt{
+  float: left;
+  margin-left: 10px;
+}
+.accordion_txt2{
+  float: left;
+  margin-left: 20px;
+}
+
+
+.accordion_icon{
   float: right;
+  font-size: 100%;
+  margin-right: 10px;
+}
+.content{
+  background: #eee;
 }
 /* 他のCSSの操作 */
   /* 既存ヘッダーの上位置調整 */
