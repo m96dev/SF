@@ -6,7 +6,7 @@
   background: #000;
   top: 0;
   left: 0;
-  z-index: 9999999999;
+  z-index: 99999999;
 }
 
 #hum_header img{
@@ -18,7 +18,7 @@
   border: none;
     color: #fff;
     font-size: 200%;
-    margin: 0 0 0 10px;
+    margin: 8px 0 0 10px;
     padding: 0;
 }
 #header_hum_bt,#header_logo,#header_cart_icon{
@@ -38,6 +38,9 @@
   margin-right: 10px;
 }
 
+.offcanvas-right {
+  margin-top: 50px;
+}
 
 /* 他のCSSの操作 */
 #ipnsh-header{
