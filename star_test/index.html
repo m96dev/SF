@@ -660,6 +660,16 @@
   <script src="./test_item/accordion.min.js"></script>
   <script src="./test_item/package.js"></script>
 
+    <script>
+    jQuery(function($) {
+  $('.link_area').css('cursor','pointer');
+  $('.link_area').on('click',function () {
+    window.location.href = $(this).find('a').attr('href');
+  });
+});
+    </script>
+
+
 <div id="hum_header" ="">
   <div id="header_hum_bt">
       <button class="hiraku-open-btn" id="offcanvas-btn-right" data-toggle-offcanvas="#js-hiraku-offcanvas-1" ="">
@@ -670,7 +680,7 @@
     <img src="test_item/logo.png" alt="スターフィルター" style="height: 32px;">
   </div>
   <div id="header_cart_icon">
-    <img src="test_item/cart.png" alt="カート" style="height: 32px;"><img src="test_item/raku.png" alt="楽天" style="height: 32px;">
+    <a href="https://sp.basket.step.rakuten.co.jp/rms/mall/bss/cartempty/;jsessionid=M1QAIxflZMXgltie_eE1dJHq5MFhEnVMuU4CCRGbHZWgb8Lr2SsL!-664288106"><img src="test_item/cart.png" alt="カート" style="height: 32px;"></a><a href="https://www.rakuten.co.jp/"><img src="test_item/raku.png" alt="楽天" style="height: 32px;"></a>
   </div>
   <br style="clear:both;">
 </div>
@@ -680,7 +690,7 @@
 <!-- サイドメニュー内のコンテンツ -->
 
   <div class="sidemenu_banner_box">
-    <h3>お得なキャンペーンはこちら</h3>
+    <h3 style="">お得なキャンペーンはこちら</h3>
     <img src="test_item/sample.jpg" alt="テスト">
   </div>
   <div class="sidemenu_banner_box">
@@ -689,8 +699,8 @@
   </div>
 
   <div class="ui accordion">
-    <div class="accordion_bt" style="padding: 15px 0;">
-      <div class="accordion_txt">HOME</div>
+    <div class="accordion_bt link_area" style="padding: 15px 0;">
+      <div class="accordion_txt"><a href="./">HOME</a></div>
       <div class="accordion_icon"><i class="caret right icon"></i></div>
       <br class="clear:both;">
     </div>
@@ -750,14 +760,14 @@
       </div>
 
 
-    <div class="accordion_bt" style="padding: 15px 0;">
-      <div class="accordion_txt">Q & A</div>
+    <div class="accordion_bt link_area" style="padding: 15px 0;">
+      <div class="accordion_txt"><a href="./">Q & A</a></div>
       <div class="accordion_icon"><i class="caret right icon"></i></div>
       <br class="clear:both;">
     </div>
 
-    <div class="accordion_bt" style="padding: 15px 0;">
-      <div class="accordion_txt">お支払い配送について</div>
+    <div class="accordion_bt link_area" style="padding: 15px 0;">
+      <div class="accordion_txt"><a href="./">お支払い配送について</a></div>
       <div class="accordion_icon"><i class="caret right icon"></i></div>
       <br class="clear:both;">
     </div>
