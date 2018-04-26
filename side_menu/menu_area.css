@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/* 固定ヘッダー部分 */
+#hum_header{
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  background: #000;
+  top: 0;
+  left: 0;
+  z-index: 30000;
+}
+
+#hum_header img{
+  margin: 0;
+  padding: 0;
+}
+
+#hum_header button{
+  border: none;
+    color: #fff;
+    font-size: 200%;
+    margin: 8px 0 0 10px;
+    padding: 0;
+}
+#header_hum_bt,#header_logo,#header_cart_icon{
+  float: left;
+  width: 33%;
+  height: 32px;
+}
+#header_hum_bt{
+}
+#header_logo{
+  text-align: center;
+}
+#header_cart_icon{
+  text-align: right;
+}
+#header_cart_icon img{
+  margin-right: 10px;
+}
+
+/* サイドメニューエリア */
+.offcanvas-right {
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+}
+
+.sidemenu_banner_box{
+  width: 90%;
+  margin: 10px auto 20px auto;
+  text-align: center;
+}
+.sidemenu_banner_box h3{
+  font-weight: bold;
+}
+.sidemenu_banner_box img{
+  width: 100%;
+}
+
+.sidemenu_banner_box h3{
+  font-size: 120%;
+  margin-bottom: 5px;
+}
+.accordion{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.accordion_bt{
+  border-bottom: 1px #555 solid;
+}
+.accordion_bt2{
+  border-bottom: 1px #555 dotted;
+}
+
+.accordion_txt{
+  float: left;
+  margin-left: 10px;
+}
+.accordion_txt2{
+  float: left;
+  margin-left: 20px;
+}
+
+.accordion_bt a,.accordion_bt2 a{
+  color: #000;
+}
+
+.accordion_icon{
+  float: right;
+  font-size: 100%;
+  margin-right: 10px;
+}
+.content{
+  background: #eee;
+}
+/* 他のCSSの操作 */
+  /* 既存ヘッダーの上位置調整 */
+#ipnsh-header{
+  margin-top: 50px;
+}
+
+#header_cart_icon img{
+  display: inline !important;
+  max-width: none !important;
+  margin-right: 10px !important;
+}
