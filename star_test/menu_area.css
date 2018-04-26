@@ -67,9 +67,11 @@
 }
 
 .accordion_bt{
+  padding: 15px 0;
   border-bottom: 1px #555 solid;
 }
 .accordion_bt2{
+  padding: 15px 0;
   border-bottom: 1px #555 dotted;
 }
 
