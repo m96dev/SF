@@ -73,13 +73,15 @@
   border-bottom: 1px #555 dotted;
 }
 
+.accordion_txt,.accordion_txt2{
+    float: left;
+    font-size:80%;
+}
+
 .accordion_txt{
-  float: left;
   margin-left: 10px;
-  font-size:80%;
 }
 .accordion_txt2{
-  float: left;
   margin-left: 20px;
 }
 
@@ -94,14 +96,6 @@
 }
 .content{
   background: #eee;
-}
-.ui.accordion .accordion .title .dropdown.icon, .ui.accordion .title .dropdown.icon {
-   -webkit-transform: rotate(90deg);
-   transform: rotate(90deg);
-}
-.ui.accordion .accordion .active.title .dropdown.icon, .ui.accordion .active.title .dropdown.icon {
-   -webkit-transform: rotate(-90deg);
-   transform: rotate(-90deg);
 }
 
 /* 他のCSSの操作 */
