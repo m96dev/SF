@@ -50,15 +50,13 @@
   margin: 10px auto 20px auto;
   text-align: center;
 }
-.sidemenu_banner_box h3{
-  font-weight: bold;
-}
 .sidemenu_banner_box img{
   width: 100%;
 }
 
 .sidemenu_banner_box h3{
-  font-size: 120%;
+  font-size: 100%;
+  font-weight: bold;
   margin-bottom: 5px;
 }
 .accordion{
@@ -78,6 +76,7 @@
 .accordion_txt{
   float: left;
   margin-left: 10px;
+     font-size: 80%;
 }
 .accordion_txt2{
   float: left;
@@ -96,6 +95,11 @@
 .content{
   background: #eee;
 }
+
+.ui.accordion .accordion .title .dropdown.icon, .ui.accordion .title .dropdown.icon {
+   transform: rotate(90deg);
+}
+
 /* 他のCSSの操作 */
   /* 既存ヘッダーの上位置調整 */
 #ipnsh-header{
